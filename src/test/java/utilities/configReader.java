@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class configReader {
 	
-	
+	/*
 		private static Properties properties;		
 		private final static String propertyFilePath = "./src/test/resources/config.properties";	
 		
@@ -35,6 +35,6 @@ public class configReader {
 			
 		}
 		
-		
+		*/
 
 }

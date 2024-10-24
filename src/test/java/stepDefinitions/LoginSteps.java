@@ -3,20 +3,25 @@ package stepDefinitions;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import hooks.appHooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.HomePage;
-import utilities.LoggerLoad;
+import utilities.PropertyLoader;
 
 public class LoginSteps {
 	
-	
-	public WebDriver driver;
-	HomePage hp = new HomePage(driver);
+	 WebDriver driver = appHooks.getDriver();
+	 HomePage hp = new HomePage(driver);
+	 private PropertyLoader propertyLoader;
+
+	    public LoginSteps() {
+	        propertyLoader = new PropertyLoader();
+	    }
+
 	
 	@Given("Admin launch the browser")
 	public void admin_launch_the_browser() {		
@@ -26,8 +31,13 @@ public class LoginSteps {
 
 	@When("Admin gives the correct LMS portal URL")
 	public void admin_gives_the_correct_lms_portal_url() {		
-		driver.get("https://lms-frontend-hackathon-oct24-173fe394c071.herokuapp.com/login");
-	}
+	     if (driver == null) {
+	            throw new IllegalStateException("WebDriver is not initialized. Please check Hooks setup.");
+	        }
+	        
+	        String url = propertyLoader.getProperty("LMSUrl"); // Retrieve the URL from properties
+	        driver.get(url); // Open the URL	
+	        }
 
 	@Then("Admin should land on the login")
 	public void admin_should_land_on_the_login() {
@@ -37,7 +47,7 @@ public class LoginSteps {
 	
 	@When("Admin gives incorrect LMS portal URL")
 	public void admin_gives_incorrect_lms_portal_url() {
-	   driver.get("https://lms-frontend-hackathon-oct24.herokuapp.com/login");
+	   driver.get(propertyLoader.getProperty("LMSUrl2"));
 	}
 
 	@Then("Admin should receive error message")
@@ -46,7 +56,7 @@ public class LoginSteps {
 	}
 	@Given("Admin is in login page")
 	public void admin_is_in_login_page() {
-		admin_should_land_on_the_login();
+		admin_gives_the_correct_lms_portal_url();
 	}
 
 	@When("Admin enter valid credentials")
@@ -54,6 +64,8 @@ public class LoginSteps {
 	   hp.enterUsername();
 	   hp.enterPassword();
 	   hp.clickLogin();
+	
+	  
 	}
 
 	@Then("Admin should land on the dashboard page")
@@ -61,7 +73,6 @@ public class LoginSteps {
 	    String title = hp.getDashboardTitle();
 	    Assert.assertEquals(title, "LMS - Learning Management System");
 	}
-
 
 
 }

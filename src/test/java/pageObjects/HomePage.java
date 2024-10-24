@@ -1,13 +1,18 @@
 package pageObjects;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage{
 	
-	public WebDriver driver;
+public WebDriver driver;
 	
 	//constructor
 	public HomePage(WebDriver driver) {	
@@ -22,7 +27,7 @@ public class HomePage{
 	@FindBy(xpath="//input[@id='password']")
 	WebElement txtPassword;
 	
-	@FindBy(xpath="//span[@class='mat-button-wrapper']")
+	@FindBy(id="login")
 	WebElement btnLogin;
 	
 	@FindBy(xpath="//span[normalize-space()='LMS - Learning Management System']")
@@ -42,9 +47,13 @@ public class HomePage{
 	}
 	
 	public void clickLogin() {
+		
 		btnLogin.click();
 	}
 	public String getDashboardTitle() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 WebElement titleofDashboardpage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[normalize-space()='LMS - Learning Management System']")));
+
 		return titleofDashboardpage.getText();
 	}
 	public String getLoginTitle() {

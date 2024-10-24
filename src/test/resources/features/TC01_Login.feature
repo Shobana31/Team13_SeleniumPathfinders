@@ -11,7 +11,7 @@ Feature: Validating Login Page
     Then Admin should land on the dashboard page
     
     
-    //Invalid
+
     #Scenario: Verify Admin is able to land on login page
     #Given Admin launch the browser
     #When Admin gives incorrect LMS portal URL
