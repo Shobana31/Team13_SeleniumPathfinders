@@ -1,9 +1,10 @@
 package utilities;
 
+import java.util.Properties;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Properties;
 
 public class PropertyLoader {
 
@@ -14,7 +15,7 @@ public class PropertyLoader {
         loadProperties();
     }
 
-    private void loadProperties() {
+    private void  loadProperties() {
         try (InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties")) {
             if (input == null) {
                 throw new FileNotFoundException("config.properties file not found in the classpath");
