@@ -14,9 +14,13 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+
+import utilities.CommonMethods;
+
 import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
 import utilities.LoggerLoad;
+
 import utilities.PropertyLoader;
 
 public class appHooks {
@@ -45,7 +49,7 @@ public class appHooks {
 	        }
 
 	        driver.manage().window().maximize();
-	   
+		CommonMethods.driver = driver;
 	}
 	
 	@After
