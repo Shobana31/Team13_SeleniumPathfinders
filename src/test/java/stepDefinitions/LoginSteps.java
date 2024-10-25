@@ -135,11 +135,10 @@ public class LoginSteps extends CommonMethods {
 
 	@Given("Admin is in login Page")
 	public void admin_is_in_login_page() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		admin_gives_the_correct_lms_portal_url();
 	}
-	@When("Admin enter valid credentials  and clicks login button")
-	public void admin_enter_valid_credentials_and_clicks_login_button() {
+	@When("Admin enter invalid credentials  and clicks login button")
+	public void admin_enter_invalid_credentials_and_clicks_login_button() {
 		// Write code here that turns the phrase above into concrete actions
 		throw new io.cucumber.java.PendingException();
 	}
@@ -149,8 +148,18 @@ public class LoginSteps extends CommonMethods {
 		throw new io.cucumber.java.PendingException();
 	}
 
-
-
+	@When("Admin enter valid credentials  and clicks login button")
+	public void admin_enter_valid_credentials_and_clicks_login_button() {
+		
+		lp.enterUsername();
+		lp.enterPassword();
+		lp.clickLogin();
+	}
+	@Then("Admin should land on dashboard page")
+	public void admin_should_land_on_dashboard_page() {
+	    String title = getPageTitle(driver);
+	    Assert.assertEquals(title, "LMS - Learning Management System");
+	}
 
 	/*
 	@Given("Admin is in login page")

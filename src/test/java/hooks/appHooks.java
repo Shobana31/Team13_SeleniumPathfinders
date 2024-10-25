@@ -3,6 +3,7 @@ package hooks;
 
 
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,13 +15,11 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-
-import utilities.CommonMethods;
-
 import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
+import utilities.CommonMethods;
+import utilities.FileDownloader;
 import utilities.LoggerLoad;
-
 import utilities.PropertyLoader;
 
 public class appHooks {
@@ -50,6 +49,8 @@ public class appHooks {
 
 	        driver.manage().window().maximize();
 		CommonMethods.driver = driver;
+		   // Download the file before executing scenarios
+        downloadFile();
 	}
 	
 	@After
@@ -75,6 +76,18 @@ if(driver!=null && scenario.isFailed()) {
 	        }
 	}
 	
+	 private void downloadFile() {
+	    	
+	        String fileURL = "https://docs.google.com/spreadsheets/d/1yJnBrcNqL196xoXOuVO99XOw4ACQLjAucmZEog3UdX4/export?format=xlsx";
+	        String saveDir = "src/test/resources/LMSData.xlsx"; 
+
+	        try {
+	            FileDownloader.downloadFile(fileURL, saveDir);
+	        } catch (IOException e) {
+	            e.printStackTrace(); // Handle error as necessary
+	        }
+	    }
+	 
     public static WebDriver getDriver() {
         return driver;
     }
