@@ -69,6 +69,7 @@ public class CommonMethods {
 	public static void actionsSendKeys(WebDriver driver,WebElement element, String input ) {
 		Actions actions = new Actions(driver);
 		actions.sendKeys(element, input).perform();
+		System.out.println();
 		
 	}
 	
