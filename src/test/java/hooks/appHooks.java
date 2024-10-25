@@ -2,6 +2,10 @@ package hooks;
 
 
 
+import java.io.ByteArrayInputStream;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,7 +14,13 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+
 import utilities.CommonMethods;
+
+import io.cucumber.java.Scenario;
+import io.qameta.allure.Allure;
+import utilities.LoggerLoad;
+
 import utilities.PropertyLoader;
 
 public class appHooks {
@@ -43,9 +53,23 @@ public class appHooks {
 	}
 	
 	@After
-	public void teardown() 
+	public void teardown(Scenario scenario) 
 	{
+if(driver!=null && scenario.isFailed()) {
+			
+			LoggerLoad.info("Taking screenshot for a failed sceanrio "+scenario);
+		
+			TakesScreenshot ts = (TakesScreenshot)driver;
+		
+			byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
+		
+			scenario.attach(screenshot, "image/png", "errorscreen");	
+		
+			Allure.addAttachment("failed scenario screenshot", new ByteArrayInputStream(screenshot));
+
+		}
 		   if (driver != null) {
+			   LoggerLoad.info("Quitting the browser ");
 	            driver.quit();
 	            driver = null; 
 	        }
