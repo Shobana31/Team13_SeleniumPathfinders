@@ -6,14 +6,21 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.PropertyLoader;
+
 public class LoginPage {
 
     private WebDriver driver;
-
+    private PropertyLoader propertyLoader;
+    
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        propertyLoader = new PropertyLoader();
     }
+    
+
+
 
     @FindBy(how=How.XPATH, using = "//img[@class='images']")
     public WebElement logo;
@@ -38,6 +45,25 @@ public class LoginPage {
 
     @FindBy(how=How.XPATH, using = "//span[@class='mat-placeholder-required mat-form-field-required-marker ng-tns-c78-9 ng-star-inserted']")
     public WebElement astriUser;
+
+    
+  
+	public void enterUsername() {
+		
+		txtUserName.sendKeys(propertyLoader.getProperty("Username"));
+		
+	}
+
+	public void enterPassword() {
+		
+		txtPassword.sendKeys(propertyLoader.getProperty("Password"));
+		
+	}
+
+	public void clickLogin() {
+		btnLogin.click();
+	}
+
 
 //    @FindBy(how=How.XPATH, using = "mat-form-field-label")
 }

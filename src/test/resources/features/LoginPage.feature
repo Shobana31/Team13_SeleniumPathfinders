@@ -108,9 +108,14 @@ Feature: Login  Page Verification
     When Admin gives the correct LMS portal URL
     Then Admin should see password in gray color
 
+Scenario: Validate login with valid credentials
+ Given Admin is in login Page
+When Admin enter valid credentials  and clicks login button 
+Then Admin should land on dashboard page 
+
   Scenario Outline:  Validate login with invalid credentials
     Given Admin is in login Page
-    When Admin enter valid credentials  and clicks login button
+    When Admin enter invalid credentials  and clicks login button
     Then Admin should land on dashboard page ( centre of the page will be empty , menu bar is present).
 
     Examples:
