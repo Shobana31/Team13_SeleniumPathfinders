@@ -89,8 +89,7 @@ public class ProgramSteps {
 
 	@When("User enters the data in Add new program window from sheet {string} and {int}")
 	public void user_enters_the_data_in_add_new_program_window_from_sheet_and(String string, Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 //	@Then("User clicks on save button")

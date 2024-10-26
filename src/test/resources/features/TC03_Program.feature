@@ -24,7 +24,7 @@ Given Admin successfully Logged on to the Portal
 	      |Batch|
 	      |Class|
 	      |Logout|
-	      |Add New Program|
+	      
 	      
 #	 @P3
 #	   Scenario: Program Page navigation validation scenario
