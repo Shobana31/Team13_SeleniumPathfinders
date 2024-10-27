@@ -24,7 +24,6 @@ public class Batch_BatchPageValidationSteps extends CommonMethods {
 	public void admin_is_on_the_dashboard_page_after_login() {
 		getURL();
 		ls.admin_enter_valid_credentials_and_clicks_login_button();
-		;
 		implicitlyWait();
 
 	}

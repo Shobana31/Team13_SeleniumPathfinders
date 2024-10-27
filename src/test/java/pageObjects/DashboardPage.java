@@ -1,11 +1,20 @@
 package pageObjects;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class DashboardPage {
+import utilities.CommonMethods;
+
+public class DashboardPage extends CommonMethods{
 	
 public WebDriver driver;
 	
@@ -14,7 +23,7 @@ public WebDriver driver;
 			PageFactory.initElements(driver, this);
 	}
 	
-	//Locating Elements ////button[normalize-space()='Add New Program']
+	//Locating Elements 
 	@FindBy(xpath="//span[normalize-space()='Program']")
 	WebElement lnkProgram;
 	
@@ -55,8 +64,19 @@ public WebDriver driver;
 		lnkAddClass.click();
 	}
 	public void clickLogout() {
-		lnkLogout.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cdk-overlay-backdrop")));
+	    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", lnkLogout);
+	    wait.until(ExpectedConditions.elementToBeClickable(lnkLogout));
+	    try {
+		lnkLogout.click();} 
+	    catch (ElementClickInterceptedException e) {
+	        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", lnkLogout);
+	    }
+	    
 	}
 
-
+	public void getAddBatch() {
+		elementGetText(lnkAddBatch);
+	}
 }

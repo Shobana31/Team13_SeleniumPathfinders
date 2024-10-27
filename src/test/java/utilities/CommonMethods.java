@@ -1,15 +1,22 @@
 package utilities;
 
-import org.openqa.selenium.*;
-import org.testng.Assert;
-
-import hooks.appHooks;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.time.Duration;
 import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import hooks.appHooks;
 
 public class CommonMethods {
 
@@ -147,5 +154,29 @@ public class CommonMethods {
 	public void closeExcel() {
 		excelReader.close(); // Close the Excel reader when done
 	}
+    
+	 public static void mouseOver(WebDriver driver, WebElement element) {
+	        Actions actions = new Actions(driver);
+	        actions.moveToElement(element).perform();
+	    }
+	 
+	
+		public boolean isElementEnabled(WebElement element) {
+	        return element.isEnabled();
+	    }
 
+	    public boolean isElementDisplayed(WebElement element) {
+	        return element.isDisplayed();
+	    }
+
+	    public void waitForElementToBeVisible(WebElement element, int i) {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(i));
+	        wait.until(ExpectedConditions.visibilityOf(element));
+	    }
+	    
+	   
+	    public boolean isElementEditable(WebElement element) {
+	        return element.isEnabled() && element.getAttribute("readonly") == null;
+	    }
+	    
 }

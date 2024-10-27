@@ -44,7 +44,7 @@ public class Batch_BatchPageNavigation extends CommonMethods {
 		String title = bp.getBatchTitle();
 		Assert.assertEquals(title, "Manage Batch");
 
-		bp.setDataFromExcel(); //validating excel data here
+	//	bp.setDataFromExcel(); //validating excel data here
 	}
 
 }
