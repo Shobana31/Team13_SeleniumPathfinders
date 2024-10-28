@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 27, 2024 04:55:11 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 28, 2024 05:02:45 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,9 +85,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">LogOut of the application from the batch page</p>
+            <p class="name">Batch Page Navigation</p>
             <p class="text-sm">
-              <span>4:55:13 PM</span> / <span>00:00:37:954</span>
+              <span>5:02:46 PM</span> / <span>00:00:14:977</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +95,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">LogOut of the application from the batch page</h5>
-<span class='badge badge-success'>10.27.2024 4:55:13 PM</span>
-<span class='badge badge-danger'>10.27.2024 4:55:50 PM</span>
-<span class='badge badge-default'>00:00:37:954</span>
+<h5 class="test-status text-pass">Batch Page Navigation</h5>
+<span class='badge badge-success'>10.28.2024 5:02:46 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:03:01 PM</span>
+<span class='badge badge-default'>00:00:14:977</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,7 +110,1599 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate logout option in the header is visible and enabled from the batch page</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify Admin Navigate to Batch page successfully</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageNavigation.admin_successfully_logged_on_to_the_lms_portal()">
+                <span>Given Admin successfully Logged on to LMS Portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageNavigation.admin_clicks_on_the_batch_menu_from_the_header()">
+                <span>When Admin Clicks on the Batch menu from the header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageNavigation.admin_should_be_in_the_manage_batch_page()">
+                <span>Then Admin should be in the Manage Batch Page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Batch Page Validation</p>
+            <p class="text-sm">
+              <span>5:03:01 PM</span> / <span>00:01:41:260</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Batch Page Validation</h5>
+<span class='badge badge-success'>10.28.2024 5:03:01 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:04:42 PM</span>
+<span class='badge badge-default'>00:01:41:260</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Validate "Title" in Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_title(java.lang.String)">
+                <span>Then Admin should see the "LMS-Learning Management System" Title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Validate "heading" in the Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_heading(java.lang.String)">
+                <span>Then Admin should see the "Manage Batch" Heading</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Validate disabled "Delete Icon" under the header in the Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_disabled_under_the_header(java.lang.String)">
+                <span>Then Admin should see the disabled "Delete Icon" under the header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Validate pagination in the Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_enabled_pagination_controls_under_the_data_table()">
+                <span>Then Admin should see the enabled pagination controls under the data table</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>Validate edit icon in each data rows</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_edit_icon_in_each_row()">
+                <span>Then Admin should see the edit icon in each row</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>validate delete icon in each data rows</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_delete_icon_in_each_row()">
+                <span>Then Admin should see the delete icon in each row</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>validate checkbox in each data rows</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_checkbox_in_each_row()">
+                <span>Then Admin should see the checkbox in each row</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>Validate Datatable headers</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_datatable_headers_batch_name_batch_description_batch_status_no_of_classes_program_name_edit_delete()">
+                <span>Then Admin should see the datatable headers Batch name, Batch Description,Batch Status, No Of classes, Program Name, Edit/Delete</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>Validate "Checkbox" in the Datatable header row</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_checkbox_in_the_datatable_header_row()">
+                <span>Then Admin should see the checkbox  in the datatable header row</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>Validate "sort icon" next to all the datatable header</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()">
+                <span>Given Admin is on the Dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()">
+                <span>When Admin Clicks on the Batch menu from header</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_sort_icon_next_to_all_datatable_headers()">
+                <span>Then Admin should see the sort icon next to all Datatable headers</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="69"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add New Batch</p>
+            <p class="text-sm">
+              <span>5:04:42 PM</span> / <span>00:00:18:393</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Add New Batch</h5>
+<span class='badge badge-success'>10.28.2024 5:04:42 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:05:01 PM</span>
+<span class='badge badge-default'>00:00:18:393</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=69</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>Verify sub menu displayed in batch menu bar</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatch.admin_is_on_the_batch_page()">
+                <span>Given Admin is on the Batch page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatch.admin_clicks_on_the_navigation_bar(java.lang.String)">
+                <span>When Admin clicks "Batch" on the navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatch.admin_should_see_sub_menu_in_menu_bar_as(java.lang.String)">
+                <span>Then Admin should see sub menu in menu bar as "Add New Batch"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>Validate Admin able to click on the Add new Batch Option</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatch.admin_is_on_the_batch_page()">
+                <span>Given Admin is on the Batch page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatch.admin_clicks_on_under_the_menu_bar(java.lang.String,java.lang.String)">
+                <span>When Admin clicks on "Add New batch" under the "batch" menu bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatch.admin_should_see_the_batch_details_pop_up_window()">
+                <span>Then Admin should see the Batch Details pop up window</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="82"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add New Batch details pop up</p>
+            <p class="text-sm">
+              <span>5:05:01 PM</span> / <span>00:05:07:043</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Add New Batch details pop up</h5>
+<span class='badge badge-success'>10.28.2024 5:05:01 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:10:08 PM</span>
+<span class='badge badge-default'>00:05:07:043</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=82</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>Validate all the fields exist in pop up</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_checks_all_the_fields_are_enabled()">
+                <span>When Admin checks all the fields are enabled</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.the_pop_up_should_include_the_fields_batch_name_number_of_classes_and_description_as_text_box_program_name_as_drop_down_status_as_radio_button()">
+                <span>Then The pop up should include the fields Batch Name,Number of classes and Description as text box, Program Name as drop down Status as radio button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>Validate batchname prefix selected program name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_selects_program_name_present_in_the_dropdown()">
+                <span>When Admin selects program name present in the dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_see_selected_program_name_in_the_batch_name_prefix_box()">
+                <span>Then Admin should see selected program name in the batch name prefix box</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Validate batch name suffix box should accept only numbers</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_alphabets_in_batch_name_suffix_box()">
+                <span>When Admin enters alphabets in batch name suffix box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_error_message_below_the_text_box_of_respective_field()">
+                <span>Then Admin should get error message below the text box of respective field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>Validate batch name prefix box is not editable</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_alphabets_in_batch_name_prefix_box()">
+                <span>When Admin enters alphabets in batch name prefix box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_see_empty_text_box()">
+                <span>Then Admin should see empty text box</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log fail-bg mr-2">Fail</span>Validate input data only for mandatory fields</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_the_data_only_to_the_mandatory_fiields_and_clicks_save_button()">
+                <span>When Admin enters the data only to the mandatory fiields and clicks save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_successful_message()">
+                <span>Then Admin should get a successful message</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class, 'p-toast-summary') and text()='Successful']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.CommonMethods.waitForElementToBeVisible(CommonMethods.java:174)
+	at pageObjects.BatchDetailsPage.getToast(BatchDetailsPage.java:206)
+	at stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_successful_message(Batch_AddNewBatchDetailsPopup.java:101)
+	at ✽.Admin should get a successful message(file:///Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:28)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[contains(@class, 'p-toast-summary') and text()='Successful']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.0.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c8c910fd-4d27-4f7f-b215-651ed83dd8a1, findElement {value=//div[contains(@class, 'p-toast-summary') and text()='Successful'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0, moz:accessibilityChecks: false, moz:buildID: 20240923135042, moz:debuggerAddress: 127.0.0.1:48312, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.0.0, moz:processID: 33274, moz:profile: /var/folders/14/9snw41b17dg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:48312/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: c8c910fd-4d27-4f7f-b215-651ed83dd8a1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at utilities.CommonMethods.waitForElementToBeVisible(CommonMethods.java:174)
+	at pageObjects.BatchDetailsPage.getToast(BatchDetailsPage.java:206)
+	at stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_successful_message(Batch_AddNewBatchDetailsPopup.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor86.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.appHooks.teardown(io.cucumber.java.Scenario)</span>
+      <div>errorscreen
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>validate input data missing for mandatory fields</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_leaves_blank_one_of_the_mandatory_fields()">
+                <span>When Admin leaves blank one of the mandatory fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_error_message_on_the_respective_mandatory_field()">
+                <span>Then Admin should get a error message on the respective mandatory field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="119"><span class="badge log fail-bg mr-2">Fail</span>validate save button in Batch details pop up</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_save_button_in_batch_details()">
+                <span>When Admin enters the valid data to all the mandatory fields and click save button in batch details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_succesesful_message()">
+                <span>Then Admin should get a succesesful message</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class, 'p-toast-summary') and text()='Successful']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.CommonMethods.waitForElementToBeVisible(CommonMethods.java:174)
+	at pageObjects.BatchDetailsPage.getToast(BatchDetailsPage.java:206)
+	at stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_succesesful_message(Batch_AddNewBatchDetailsPopup.java:129)
+	at ✽.Admin should get a succesesful message(file:///Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:38)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[contains(@class, 'p-toast-summary') and text()='Successful']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.0.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [551a35b0-b1a8-4f4f-96de-74809fd2fb89, findElement {value=//div[contains(@class, 'p-toast-summary') and text()='Successful'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0, moz:accessibilityChecks: false, moz:buildID: 20240923135042, moz:debuggerAddress: 127.0.0.1:34233, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.0.0, moz:processID: 33507, moz:profile: /var/folders/14/9snw41b17dg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:34233/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 551a35b0-b1a8-4f4f-96de-74809fd2fb89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at utilities.CommonMethods.waitForElementToBeVisible(CommonMethods.java:174)
+	at pageObjects.BatchDetailsPage.getToast(BatchDetailsPage.java:206)
+	at stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_succesesful_message(Batch_AddNewBatchDetailsPopup.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor86.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.appHooks.teardown(io.cucumber.java.Scenario)</span>
+      <div>errorscreen
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="125"><span class="badge log fail-bg mr-2">Fail</span>validate cancel button in Batch details pop up</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_cancel_button_in_batch_details()">
+                <span>When Admin enters the valid data to all the mandatory fields and click cancel button in Batch details</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //ul[@role='listbox']/p-dropdownitem/li[@aria-label='InformationTechPath']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.0.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d58b5b4b-b2a9-4ed4-afbf-240961e832a8, findElement {value=//ul[@role='listbox']/p-dropdownitem/li[@aria-label='InformationTechPath'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0, moz:accessibilityChecks: false, moz:buildID: 20240923135042, moz:debuggerAddress: 127.0.0.1:8519, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.0.0, moz:processID: 33628, moz:profile: /var/folders/14/9snw41b17dg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:8519/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: d58b5b4b-b2a9-4ed4-afbf-240961e832a8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pageObjects.BatchDetailsPage.selectProgramNameListBox(BatchDetailsPage.java:162)
+	at pageObjects.BatchDetailsPage.enterAllDetails(BatchDetailsPage.java:227)
+	at stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_cancel_button_in_batch_details(Batch_AddNewBatchDetailsPopup.java:139)
+	at ✽.Admin enters the valid data to all the mandatory fields and click cancel button in Batch details(file:///Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:42)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_can_see_the_batch_details_popup_closes_without_creating_any_batch()">
+                <span>Then Admin can see the batch details popup closes without creating any batch</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.appHooks.teardown(io.cucumber.java.Scenario)</span>
+      <div>errorscreen
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="131"><span class="badge log pass-bg mr-2">Pass</span>validate close icon on the batch details pop up</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()">
+                <span>Given Admin is on the Add new batch pop up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_clicks_on_the_close_icon()">
+                <span>When Admin clicks on the close icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_AddNewBatchDetailsPopup.batch_details_pop_up_closes()">
+                <span>Then batch details pop up closes</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="137"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Admin is on the batch page</p>
+            <p class="text-sm">
+              <span>5:10:08 PM</span> / <span>00:00:26:712</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Admin is on the batch page</h5>
+<span class='badge badge-success'>10.28.2024 5:10:08 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:10:35 PM</span>
+<span class='badge badge-default'>00:00:26:712</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=137</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="138"><span class="badge log pass-bg mr-2">Pass</span>Validate Edit icon feature in any row</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_is_on_the_batch_page()">
+                <span>Given Admin is on the batch page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_clicks_the_edit_icon()">
+                <span>When Admin clicks the edit icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_should_see_the_batch_details_pop_up_window()">
+                <span>Then Admin should see the Batch details pop up window</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="144"><span class="badge log pass-bg mr-2">Pass</span>Validate program name  value is disabled to edit</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_is_on_the_batch_page()">
+                <span>Given Admin is on the batch page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_clicks_the_edit_icon()">
+                <span>When Admin clicks the edit icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_should_see_program_name_value_field_is_disabled_for_editing()">
+                <span>Then Admin should see Program name value field is disabled for editing</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="150"><span class="badge log pass-bg mr-2">Pass</span>Validate batch name  value is disabled to edit</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_is_on_the_batch_page()">
+                <span>Given Admin is on the batch page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_clicks_the_edit_icon()">
+                <span>When Admin clicks the edit icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_icon_Validation.admin_should_see_batch_name_value_field_is_disabled_for_editing()">
+                <span>Then Admin should see batch name value field is disabled for editing</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="156"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Edit batch validation</p>
+            <p class="text-sm">
+              <span>5:10:35 PM</span> / <span>00:00:28:339</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Edit batch validation</h5>
+<span class='badge badge-success'>10.28.2024 5:10:35 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:11:03 PM</span>
+<span class='badge badge-default'>00:00:28:339</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=156</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Validate editing description and No. of classes fields with invalid data in the pop up</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_is_on_the_batch_details_page()">
+                <span>Given Admin is on the Batch Details Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_updates_any_fields_with_invalid_data_and_click_save_button()">
+                <span>When Admin Updates any fields with invalid data and click save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_should_get_a_error_message_under_the_respective_field()">
+                <span>Then Admin should get a error message under the respective field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="163"><span class="badge log pass-bg mr-2">Pass</span>validate save button in Batch details pop up</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_is_on_the_batch_details_page()">
+                <span>Given Admin is on the Batch Details Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_save_button()">
+                <span>When Admin enters the valid data to all the mandatory fields and click save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_should_get_a_succesesful_message_for_editing_the_batch()">
+                <span>Then Admin should get a succesesful message for editing the batch</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="169"><span class="badge log pass-bg mr-2">Pass</span>validate cancel button in Batch details pop up</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_is_on_the_batch_details_page()">
+                <span>Given Admin is on the Batch Details Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_cancel_button()">
+                <span>When Admin enters the valid data to all the mandatory fields and click cancel button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Edit_batch_validation.admin_can_see_the_batch_details_popup_closes_without_editing_the_batch()">
+                <span>Then Admin can see the batch details popup closes without editing the batch</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="175"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete batch validation</p>
+            <p class="text-sm">
+              <span>5:11:03 PM</span> / <span>00:00:37:998</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Delete batch validation</h5>
+<span class='badge badge-success'>10.28.2024 5:11:03 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:11:41 PM</span>
+<span class='badge badge-default'>00:00:37:998</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=175</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="176"><span class="badge log pass-bg mr-2">Pass</span>validate delete Icon on any row in delete batch</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_is_on_the_batch_page_for_delete()">
+                <span>Given Admin is on the batch page for Delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_clicks_the_delete_icon_on_any_of_the_row()">
+                <span>When Admin clicks the delete Icon on any of the row</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_should_see_the_confirm_alert_box_with_yes_and_no_button()">
+                <span>Then Admin should see the confirm alert box with yes and no button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="182"><span class="badge log pass-bg mr-2">Pass</span>Validate yes button on the confirm alert box in delete batch</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_is_on_the_batch_page_for_delete()">
+                <span>Given Admin is on the batch page for Delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_clicks_on_the_delete_icon_and_click_yes_buttton()">
+                <span>When Admin clicks on the delete icon and click yes buttton</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_should_see_the_successfull_message_and_the_batch_should_be_deleted()">
+                <span>Then Admin should see the successfull message and the batch should be deleted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="188"><span class="badge log pass-bg mr-2">Pass</span>validate no button on the confirm alert box in delete batch</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_is_on_the_batch_page_for_delete()">
+                <span>Given Admin is on the batch page for Delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_clicks_on_the_delete_icon_and_click_no_buttton()">
+                <span>When Admin clicks on the delete icon and click no buttton</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_should_see_the_alert_box_closed_and_the_batch_is_not_deleted()">
+                <span>Then Admin should see the alert box closed and the batch is not deleted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="194"><span class="badge log pass-bg mr-2">Pass</span>validate close Icon on the alert box in delete batch</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_is_on_the_batch_page_for_delete()">
+                <span>Given Admin is on the batch page for Delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_clicks_on_the_close_icon_on_alert_box()">
+                <span>When Admin clicks on the close icon on alert box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_batch_validation.admin_should_see_the_alert_box_closed()">
+                <span>Then Admin should see the alert box closed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="200"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete multiple batches with check box</p>
+            <p class="text-sm">
+              <span>5:11:41 PM</span> / <span>00:00:20:957</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Delete multiple batches with check box</h5>
+<span class='badge badge-success'>10.28.2024 5:11:41 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:12:02 PM</span>
+<span class='badge badge-default'>00:00:20:957</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=200</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="201"><span class="badge log pass-bg mr-2">Pass</span>Validate single row delete with checkbox</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_multiple_batches_with_check_box.admin_is_on_the_batch_page_for_delete_multiple()">
+                <span>Given Admin is on the batch page for delete multiple</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_multiple_batches_with_check_box.admin_clicks_on_the_delete_icon_under_the_manage_batch_header_for_single_row()">
+                <span>When Admin clicks on the delete icon under the Manage batch header for single row</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_multiple_batches_with_check_box.the_respective_row_in_the_table_should_be_deleted()">
+                <span>Then The respective row in the table should be deleted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="207"><span class="badge log pass-bg mr-2">Pass</span>Validate multiple row delete with checkbox</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_multiple_batches_with_check_box.admin_is_on_the_batch_page_for_delete_multiple()">
+                <span>Given Admin is on the batch page for delete multiple</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_multiple_batches_with_check_box.admin_clicks_on_the_delete_icon_under_the_manage_batch_header_for_multiple_row()">
+                <span>When Admin clicks on the delete icon under the Manage batch header for multiple row</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Delete_multiple_batches_with_check_box.the_respective_row_in_the_table_should_be_deleted()">
+                <span>Then The respective row in the table should be deleted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="213"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Pagination</p>
+            <p class="text-sm">
+              <span>5:12:02 PM</span> / <span>00:05:15:664</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Pagination</h5>
+<span class='badge badge-success'>10.28.2024 5:12:02 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:17:18 PM</span>
+<span class='badge badge-default'>00:05:15:664</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=213</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="214"><span class="badge log pass-bg mr-2">Pass</span>Validate next page link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_is_on_the_batch_page_for_pagination()">
+                <span>Given Admin is on the batch page for Pagination</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_clicks_next_page_link_on_the_data_table()">
+                <span>When Admin clicks next page link on the data table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_should_see_the_next_enabled_link()">
+                <span>Then Admin should see the Next enabled link</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="220"><span class="badge log pass-bg mr-2">Pass</span>validate last page link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_is_on_the_batch_page_for_pagination()">
+                <span>Given Admin is on the batch page for Pagination</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_clicks_last_page_link_on_the_data_table()">
+                <span>When Admin clicks last page link on the data table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_should_see_the_last_page_link_with_next_page_link_disabled_on_the_table()">
+                <span>Then Admin should see the last page link with next page link disabled on the table</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="226"><span class="badge log pass-bg mr-2">Pass</span>validate the backward page link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_is_on_the_batch_page_for_pagination()">
+                <span>Given Admin is on the batch page for Pagination</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_clicks_backward_page_link_on_the_data_table()">
+                <span>When Admin clicks backward page link on the data table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_should_see_the_previous_page_on_the_table()">
+                <span>Then Admin should see the previous page on the table</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="232"><span class="badge log pass-bg mr-2">Pass</span>validate the first page link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_is_on_the_batch_page_for_pagination()">
+                <span>Given Admin is on the batch page for Pagination</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_clicks_first_page_link_on_the_data_table()">
+                <span>When Admin clicks first page link on the data table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Pagination.admin_should_see_the_very_first_page_on_the_data_table()">
+                <span>Then Admin should see the very first page on the data table</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="238"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Search Text box validation</p>
+            <p class="text-sm">
+              <span>5:17:18 PM</span> / <span>00:00:10:811</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Search Text box validation</h5>
+<span class='badge badge-success'>10.28.2024 5:17:18 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:17:29 PM</span>
+<span class='badge badge-default'>00:00:10:811</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=238</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="239"><span class="badge log fail-bg mr-2">Fail</span>validate serach box functionality</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Batch_Search_Text_box_validation.admin_is_on_the_batch_page_for_search()">
+                <span>Given Admin is on the batch page for search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Batch_Search_Text_box_validation.admin_enters_the_batch_name_in_the_serach_text_box()">
+                <span>When Admin enters the batch name in the serach text box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.Batch_Search_Text_box_validation.admin_should_see_the_filtered_batches_in_the_data_table()">
+                <span>Then Admin should see the filtered batches in the data table</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.Batch_Search_Text_box_validation.admin_should_see_the_filtered_batches_in_the_data_table(Batch_Search_Text_box_validation.java:40)
+	at ✽.Admin should see the filtered batches in the data table(file:///Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/src/test/resources/features/TC04_10_Search_Text_box_validation.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.appHooks.teardown(io.cucumber.java.Scenario)</span>
+      <div>errorscreen
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded4.png' src="../Screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="245"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LogOut of the application from the batch page</p>
+            <p class="text-sm">
+              <span>5:17:29 PM</span> / <span>00:00:09:353</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">LogOut of the application from the batch page</h5>
+<span class='badge badge-success'>10.28.2024 5:17:29 PM</span>
+<span class='badge badge-danger'>10.28.2024 5:17:38 PM</span>
+<span class='badge badge-default'>00:00:09:353</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=245</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="246"><span class="badge log pass-bg mr-2">Pass</span>Validate logout option in the header is visible and enabled from the batch page</div>
       </div>
     </div>
         <div class="collapse">
@@ -139,30 +1737,164 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:09:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='128'>When Admin enters the valid data to all the mandatory fields and click cancel button in Batch details</a>
+<div class="">
+<span class="badge badge-default">Add New Batch details pop up.validate cancel button in Batch details pop up.When Admin enters the valid data to all the mandatory fields and click cancel button in Batch details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:06:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='111'>Then Admin should get a successful message</a>
+<div class="">
+<span class="badge badge-default">Add New Batch details pop up.Validate input data only for mandatory fields.Then Admin should get a successful message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:08:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='123'>Then Admin should get a succesesful message</a>
+<div class="">
+<span class="badge badge-default">Add New Batch details pop up.validate save button in Batch details pop up.Then Admin should get a succesesful message</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:17:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='238' id='243'>Then Admin should see the filtered batches in the data table</a>
+<div class="">
+<span class="badge badge-default">Search Text box validation.validate serach box functionality.Then Admin should see the filtered batches in the data table</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 27, 2024 04:55:11 PM</h3>
+<h3>Oct 28, 2024 05:02:45 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 27, 2024 04:55:51 PM</h3>
+<h3>Oct 28, 2024 05:17:38 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>9</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -178,12 +1910,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='81%'>
+<b>9</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='18%'><b>2</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -201,9 +1933,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='90%'><b>36</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='10%'><b>4</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -221,10 +1953,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='95%'><b>119</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='3%'><b>4</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -240,7 +1972,7 @@
 </div></div>
 <script>
 var timeline = {
-"LogOut of the application from the batch page":37.954
+"Batch Page Navigation":14.977,"Batch Page Validation":101.26,"Add New Batch":18.393,"Add New Batch details pop up":307.043,"Admin is on the batch page":26.712,"Edit batch validation":28.339,"Delete batch validation":37.998,"Delete multiple batches with check box":20.957,"Pagination":315.664,"Search Text box validation":10.811,"LogOut of the application from the batch page":9.353
 };
 </script>
 <div class="row">
@@ -249,21 +1981,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 9,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 36,
+failChild: 4,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
-failGrandChild: 0,
+passGrandChild: 119,
+failGrandChild: 4,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };

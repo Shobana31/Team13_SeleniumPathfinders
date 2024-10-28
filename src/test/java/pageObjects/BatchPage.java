@@ -2,7 +2,6 @@ package pageObjects;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -51,14 +50,11 @@ public class BatchPage extends CommonMethods {
 
 	@FindBy(xpath = "//thead[@class='p-datatable-thead']//th/p-sorticon")
 	WebElement sortIconHeader;
-	
+
 	@FindBy(xpath = "//span[normalize-space()='Batch Details']")
 	WebElement batchDetails;
-	
-	
 
 	// Action methods
-
 	public String getBatchTitle() {
 		return titleofBatchPage.getText();
 	}
@@ -71,33 +67,26 @@ public class BatchPage extends CommonMethods {
 		return paginationControl.isEnabled();
 	}
 
-	
 	public void clickEdit() {
-		   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".cdk-overlay-backdrop")));
+		WebElement editIcon = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@icon='pi pi-pencil']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", editIcon);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editIcon);
 
-		   wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".cdk-overlay-backdrop")));
-
-		    WebElement editIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@icon='pi pi-pencil']")));
-
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", editIcon);
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", editIcon);
-
-		//editIcon.click();
 	}
-	
+
 	public void clickDelete() {
-		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".cdk-overlay-backdrop")));
+		WebElement deleteIcon = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@class='action']//button[@icon='pi pi-trash']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteIcon);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", deleteIcon);
 
-		   wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".cdk-overlay-backdrop")));
-
-		    WebElement deleteIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='action']//button[@icon='pi pi-trash']")));
-
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteIcon);
-		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", deleteIcon);
-
-	//	deleteIcon.click();
 	}
-	
+
 	public int clickEditIcon() {
 		List<WebElement> li = driver.findElements(By.xpath("//div[@class='action']//button[@icon='pi pi-pencil']"));
 		return li.size();
@@ -141,5 +130,5 @@ public class BatchPage extends CommonMethods {
 	public String getBatchDetails() {
 		return elementGetText(batchDetails);
 	}
-	
+
 }
