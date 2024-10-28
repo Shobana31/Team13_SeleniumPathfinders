@@ -25,11 +25,13 @@ public class HomePage{
 	@FindBy(xpath="//span[@class='mat-button-wrapper']")
 	WebElement btnLogin;
 	
-	@FindBy(xpath="//span[normalize-space()='LMS - Learning Management System']")
+	@FindBy(xpath="//span[contains(text(),'LMS')]")
 	WebElement titleofDashboardpage;
 	
-	@FindBy(xpath="//p[text()='Please login to LMS application']")
+	@FindBy(xpath="//p[normalize-space()='Please login to LMS application']")
 	WebElement titleofLoginpage;
+	
+
 	
 	//Action methods
 	
@@ -50,5 +52,6 @@ public class HomePage{
 	public String getLoginTitle() {
 		return titleofLoginpage.getText();
 	}
+	
 
 }

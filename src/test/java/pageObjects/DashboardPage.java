@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 public class DashboardPage {
 	
 	public DashboardPage() {
-		
+		//DashboardPage dp = new DashboardPage(driver);
 	}
 	
 	//Locating Elements ////button[normalize-space()='Add New Program']
@@ -31,6 +31,13 @@ public class DashboardPage {
 	@FindBy(xpath="//span[normalize-space()='Logout']")
 	WebElement lnkLogout;
 	
+	@FindBy(xpath="//button[@id='program']")
+	WebElement txtProgram;
+	
+	public boolean getProgramText() {
+		 return txtProgram.isDisplayed();
+	}
+	
 	public void clickProgramLink() {
 		lnkProgram.click();
 	}
@@ -51,6 +58,11 @@ public class DashboardPage {
 	}
 	public void clickLogout() {
 		lnkLogout.click();
+	}
+	public boolean isProgramDisplayed() {
+		lnkProgram.isDisplayed();
+		return true;
+		
 	}
 
 }
