@@ -140,28 +140,68 @@ public class ClassSteps {
 	@When("Admin enter mandatory fields")
 	public void admin_enter_mandatory_fields() throws InterruptedException {
 		Thread.sleep(2000);
-		
-	    //cp.selectBatchName();
-	    cp.setClassTopic();
-	    Thread.sleep(2000);
-	    cp.setClassDescription();
-	    Thread.sleep(3000);
-	    cp.clickDatePicker();
-	    Thread.sleep(5000);
-	    cp.enternoofClasses();
-	    Thread.sleep(2000);
-	    cp.clickStaffName();
-	    Thread.sleep(2000);
-	    cp.clickStatus();
-	    Thread.sleep(2000);
-	    cp.clickSave();
-	    
+		cp.enterClassDetailsData(); 
+		//cp.checkToastMessage();
 	}
 
 	@Then("Admin get success message")
-	public void admin_get_success_message() {
-	    
+	public void admin_get_success_message() throws InterruptedException {
+		System.out.println("Successful, Class created");
+	    //cp.checkToastMessage();
 	}
+	
+	@When("Admin enter invalid input in the fields")
+	public void admin_enter_invalid_input_in_the_fields() throws InterruptedException {
+	    cp.enterInvalidClassDetailsData();
+	}
+
+	@Then("Admin get error message class is not created")
+	public void admin_get_error_message_class_is_not_created() {
+	    Assert.assertTrue(cp.getAssertionMsg());
+	}
+	//Edit
+		@Given("Admin in edit class popup")
+		public void admin_in_edit_class_popup() throws InterruptedException {
+			Thread.sleep(2000);
+		    cp.clickEdit();
+		}
+
+		@When("Admin update fields with valid data and click save")
+		public void admin_update_fields_with_valid_data_and_click_save() throws InterruptedException {
+		   Thread.sleep(2000);
+			cp.enterUpdateClassDetailsData();
+		}
+
+		@Then("Admin get message class details update successfully")
+		public void admin_get_message_class_details_update_successfully() {
+		    System.out.println("Class updated");
+		}
+		@When("Admin click edit icon")
+		public void admin_click_edit_icon() throws InterruptedException {
+			admin_in_edit_class_popup();
+		}
+
+		@Then("Admin see batchname field is disabled")
+		public void admin_see_batchname_field_is_disabled() throws InterruptedException {
+			Thread.sleep(2000);
+			boolean state = driver.findElement(By.xpath("//input[@placeholder='Select a Batch Name']")).isEnabled();
+		   System.out.println("Batchname Enabled:" +state );
+		}
+		@Then("Admin see class topic field is disabled")
+		public void admin_see_class_topic_field_is_disabled() throws InterruptedException {
+			Thread.sleep(2000);
+			boolean state = driver.findElement(By.xpath("//input[@id='classTopic']")).isEnabled();
+		   System.out.println("Class Topic Enabled:" +state );
+		}
+		@When("Admin click cancel button")
+		public void admin_click_cancel_button() {
+		    driver.findElement(By.xpath("//button[@class='p-button-rounded p-button-danger p-button p-component ng-star-inserted']")).click();
+		}
+
+		@Then("Admin see the popup disappear and nothing changes")
+		public void admin_see_the_popup_disappear_and_nothing_changes() {
+		    System.out.println("Popup disappeared");
+		}
 	
 	//pagination
 	//Next page
@@ -268,14 +308,78 @@ public class ClassSteps {
 		Thread.sleep(2000);
 		cp.getStaffNames();
 	}
+    //Sort by batchname
+	@When("Admin click batch name in the sort icon")
+	public void admin_click_batch_name_in_the_sort_icon() throws InterruptedException {
+		Thread.sleep(2000);
+	    cp.clickSortBatchName();
+	}
+	@Then("Admin see class details are sorted by batchname")
+	public void admin_see_class_details_are_sorted_by_batchname() {
+	      cp.getBatchNames();
+	}
+   //Sort by class topic
+	@When("Admin click class topic in the sort icon")
+	public void admin_click_class_topic_in_the_sort_icon() {
+	    cp.clickClassTopicSort();
+	}
 
+	@Then("Admin see class details are sorted by class topic")
+	public void admin_see_class_details_are_sorted_by_class_topic() {
+	    cp.getClassTopics();
+	}
+	 //Sort by class description
+	@When("Admin click class description in the sort icon")
+	public void admin_click_class_description_in_the_sort_icon() {
+	    cp.clickClassDescSort();
+	}
+	@Then("Admin see class details are sorted by class description")
+	public void admin_see_class_details_are_sorted_by_class_description() {
+	    cp.getClassDescriptions();
+	}
+	
+	//Sort by class status
+	@When("Admin click class status in the sort icon")
+	public void admin_click_class_status_in_the_sort_icon() {
+	    cp.clickClassStatusSort();
+	}
 
+	@Then("Admin see class details are sorted by class status")
+	public void admin_see_class_details_are_sorted_by_class_status() {
+	   cp.getClassStatus();
+	}
+	//Sort by class date
+	@When("Admin click class date in the sort icon")
+	public void admin_click_class_date_in_the_sort_icon() {
+	    cp.clickClassDateSort();
+	}
 
+	@Then("Admin see class details are sorted by class date")
+	public void admin_see_class_details_are_sorted_by_class_date() {
+	    cp.getClassdates();
+	}
+	//Sort by class staffname
+	@When("Admin click class staff name in the sort icon")
+	public void admin_click_class_staff_name_in_the_sort_icon() {
+	   cp.clickClassStaffnameSort();
+	}
 
+	@Then("Admin see class details are sorted by class staff name")
+	public void admin_see_class_details_are_sorted_by_class_staff_name() {
+	   cp.getStaffNames();
+	}
 
+	//Delete row button
+	@When("Admin click delete icon")
+	public void admin_click_delete_icon() throws InterruptedException {
+	    cp.clickDelete();	
+	    //cp.getAlert();
+	}
 
-
-
-
+	@Then("Admin see alert open with heading confirm with yes and no button")
+	public void admin_see_alert_open_with_heading_confirm_with_yes_and_no_button() throws InterruptedException  {
+      System.out.println("Alert open with confirm heading..");
+		
+	}
 
 }

@@ -1,15 +1,20 @@
 package pageObjects;
 
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ClassPage {
 	
@@ -34,6 +39,9 @@ public class ClassPage {
 	@FindBy(xpath="//input[@id='filterGlobal']")
 	WebElement txtSearch;
 	
+	@FindBy(xpath="//span[@class='p-button-icon pi pi-pencil']")
+	WebElement iconEdit;
+	
 	@FindBy(xpath="//div[@role='checkbox']")
 	WebElement iconCheckbox;
 	
@@ -43,7 +51,7 @@ public class ClassPage {
 	@FindBy(xpath="//div[@class='p-paginator-bottom p-paginator p-component ng-star-inserted']")
 	WebElement iconPagination;
 	
-	@FindBy(xpath="//span[@class='p-button-icon pi pi-trash'][1]")
+	@FindBy(xpath="//span[@class='p-button-icon pi pi-trash']")
 	WebElement btnDelete;
 	
 	@FindBy(xpath="//div[@class='p-d-flex p-ai-center p-jc-between ng-star-inserted']")
@@ -64,7 +72,7 @@ public class ClassPage {
 	@FindBy(xpath="//span[@class='p-dialog-header-close-icon ng-tns-c168-7 pi pi-times']")
 	WebElement btnclose;
 	
-	@FindBy(xpath="//span[@class='p-dropdown-trigger-icon ng-tns-c171-42 pi pi-chevron-down']")
+	@FindBy(xpath="//p-dropdown[@id='batchName']")
 	WebElement inputBatchName;
 	
 	@FindBy(xpath="//input[@id='classTopic']")
@@ -150,6 +158,64 @@ public class ClassPage {
 	@FindBy(xpath = "//tbody//tr//td[7]")    
     List<WebElement> staffNames;
 	
+	@FindBy(xpath = "//i[@class='p-sortable-column-icon pi pi-fw pi-sort-alt']")    
+    WebElement sortBatchIcon;
+	
+	@FindBy(xpath = "//p-sorticon[@field='classTopic']//i[@class='p-sortable-column-icon pi pi-fw pi-sort-alt']")    
+    WebElement sortClassTopicIcon;
+	
+	@FindBy(xpath="//p-sorticon[@field='classDescription']//i[@class='p-sortable-column-icon pi pi-fw pi-sort-alt']")
+	WebElement sortClassDescIcon;
+	
+	@FindBy(xpath="//p-sorticon[@field='classStatus']//i[@class='p-sortable-column-icon pi pi-fw pi-sort-alt']")
+	WebElement sortClassStatusIcon;
+	
+	@FindBy(xpath="//p-sorticon[@field='classDate']//i[@class='p-sortable-column-icon pi pi-fw pi-sort-alt']")
+	WebElement sortClassDateIcon;
+	
+	@FindBy(xpath="//p-sorticon[@field='classStaffName']//i[@class='p-sortable-column-icon pi pi-fw pi-sort-alt']")
+	WebElement sortClassStaffnameIcon;
+
+	@FindBy(xpath = "//div[@class='action']//button[@icon='pi pi-trash']")
+	WebElement deleteIcon;
+	
+	@FindBy(xpath = "//span[@class='p-dialog-title ng-tns-c204-8 ng-star-inserted']")
+	WebElement deleteTitle;
+
+	@FindBy(xpath = "//button[@class='ng-tns-c204-8 p-confirm-dialog-reject p-ripple p-button p-component ng-star-inserted']")
+	WebElement deleteNoButton;
+
+	@FindBy(xpath = "//button[@class='ng-tns-c204-8 p-confirm-dialog-accept p-ripple p-button p-component ng-star-inserted']")
+	WebElement deleteYesButton;
+
+	@FindBy(xpath = "//div[@class='p-dialog-header ng-tns-c204-8 ng-star-inserted']//button[@type='button']")
+	WebElement deleteCloseButton;
+
+	@FindBy(xpath = "//*[@class='mat-card-title']//button[@icon='pi pi-trash']")
+	WebElement deleteAllButton;
+	
+	
+	public String getDeleteTitle() {
+		return deleteTitle.getText();
+	}
+	
+	public String getDeleteNoButton() {
+		return deleteNoButton.getText();
+	}
+	
+	public String getDeleteYesButton() {
+		return deleteYesButton.getText();
+	}
+	public void clickEdit() {
+		iconEdit.click();
+	}
+	public void clickYes() {
+		deleteYesButton.click();
+	}
+	public void clickNo() {
+		deleteNoButton.click();
+	}
+	
 	public void clickClass() {
 		 lnkClass.click();		
 	}
@@ -200,21 +266,7 @@ public class ClassPage {
 	public void switchPopupClassDetails() {
 		ctrldialogClassDetails.isSelected();
 	}
-	public void selectBatchName() throws InterruptedException {
-		Select dropdownOps = new Select(inputBatchName);
-		Thread.sleep(3000);
-		dropdownOps.selectByVisibleText("Micro service-01");
-		//dropdownOps.selectByValue("Micro service-01");
-		
-//		List<WebElement> ops = dropdownOps.getOptions();
-//		System.out.println("Num of options:" + ops.size());
-//		
-//		for(WebElement op : ops) 
-//		{
-//			System.out.println(op.getText());
-//			
-//		}
-	}
+	
 	public void setClassTopic() {
 		inputClassTopic.sendKeys("Typescript");
 	}
@@ -223,34 +275,7 @@ public class ClassPage {
 		inputClassDes.sendKeys("Test description");
 	}
 	
-	public void clickDatePicker() {
-		///html/body/app-root/app-session/p-dialog/div/div/div[2]/div[4]/p-calendar/span/button/span[1]
-		
-		clkDatepicker.click();//open date picker
-		clkDatepicker.sendKeys("15/11/2024");
-//		String monthandyear="November 2024";
-//		String date="15";
-		
-		//select month and year
-//		while(true) {
-//			String currentMonthandYear=selectMonthandYear.getText();
-//			if(currentMonthandYear.equals(monthandyear))
-//			{
-//				break;
-//			}
-//			selectNext.click();
-//		}
-//		
-//		//select date
-//		for(WebElement dt:selectAllDates) {
-//			if(dt.getText().equals(date)) {
-//				dt.click();
-//				break;
-//			}
-//		}
-//		
-		
-	}
+	
 	public void enternoofClasses() {
 		inputnoofClasses.isEnabled();
 	}
@@ -365,15 +390,21 @@ public class ClassPage {
     	//reading data from table
     	int total_rows = driver.findElements(By.xpath("//table[@role='grid']//tr")).size();
     	System.out.println(total_rows);      	        	
-    	
+    	ArrayList<String> sortedList = new ArrayList<>(); 
     	for(int r=1; r < total_rows; r++) {    		
-    		String batchname = driver.findElement(By.xpath("//tbody//tr["+r+"]//td[2]")).getText();
-    		if(batchname !=null) {
-    		System.out.println(batchname);
+    		List<WebElement> batchnames = driver.findElements(By.xpath("//tbody//tr["+r+"]//td[2]"));
+    		if(batchnames !=null) {
+    			sortedList.add(batchnames.get(0).getText());
+    		
     		}else {
     			System.out.println("Batch name is not present in the table!");
     		}
-    }
+        }
+        Collections.sort(sortedList);
+		
+		for(String s : sortedList) {
+			System.out.println(s); 				
+		}
    }
     public void enterClassTopic() {
     	boxSearch.clear();
@@ -383,15 +414,78 @@ public class ClassPage {
     	//reading data from table
     	int total_rows = driver.findElements(By.xpath("//table[@role='grid']//tr")).size();
     	System.out.println(total_rows);      	        	
-    	
+    	ArrayList<String> sortedList = new ArrayList<>(); 
     	for(int r=1; r < total_rows; r++) {
-    		String classtopic = driver.findElement(By.xpath("//tbody//tr["+r+"]//td[3]")).getText();
-    		if(classtopic != null) {
-    		System.out.println(classtopic);
+    		List<WebElement> classtopics = driver.findElements(By.xpath("//tbody//tr["+r+"]//td[3]"));
+    		if(classtopics != null) {
+    			sortedList.add(classtopics.get(0).getText());
     		}else {
     			System.out.println("Class topic is not present in the table!");
     		}
+        }
+        Collections.sort(sortedList);
+		
+		for(String s : sortedList) {
+			System.out.println(s); 				
+		}
     }
+    public void getClassDescriptions() {
+    	//reading data from table
+    	int total_rows = driver.findElements(By.xpath("//table[@role='grid']//tr")).size();
+    	System.out.println(total_rows);      	        	
+    	ArrayList<String> sortedList = new ArrayList<>(); 
+    	for(int r=1; r < total_rows; r++) {
+    		List<WebElement> classdes = driver.findElements(By.xpath("//tbody//tr["+r+"]//td[4]"));
+    		if(classdes != null) {
+    			sortedList.add(classdes.get(0).getText());
+    		}else {
+    			System.out.println("Class description is not present in the table!");
+    		}
+        }
+        Collections.sort(sortedList);
+		
+		for(String s : sortedList) {
+			System.out.println(s); 				
+		}
+    }
+    public void getClassStatus() {
+    	//reading data from table
+    	int total_rows = driver.findElements(By.xpath("//table[@role='grid']//tr")).size();
+    	System.out.println(total_rows);      	        	
+    	ArrayList<String> sortedList = new ArrayList<>(); 
+    	for(int r=1; r < total_rows; r++) {
+    		List<WebElement> classstatus = driver.findElements(By.xpath("//tbody//tr["+r+"]//td[5]"));
+    		if(classstatus != null) {
+    			sortedList.add(classstatus.get(0).getText());
+    		}else {
+    			System.out.println("Class status is not present in the table!");
+    		}
+        }
+        Collections.sort(sortedList);
+		
+		for(String s : sortedList) {
+			System.out.println(s); 				
+		}
+    }
+    public void getClassdates() {
+    	//reading data from table
+    	int total_rows = driver.findElements(By.xpath("//table[@role='grid']//tr")).size();
+    	System.out.println(total_rows);      	        	
+    	ArrayList<String> sortedList = new ArrayList<>(); 
+    	for(int r=1; r < total_rows; r++) {
+    		
+    		List<WebElement> classdates = driver.findElements(By.xpath("//tbody//tr["+r+"]//td[6]"));
+    		if(classdates != null) {
+    			sortedList.add(classdates.get(0).getText());
+    		}else {
+    			System.out.println("Class date is not present in the table!");
+    		}
+         }
+         Collections.sort(sortedList);
+		
+		for(String s : sortedList) {
+			System.out.println(s); 				
+		}
     }
     public void enterStaffName() {
     	boxSearch.clear();
@@ -401,17 +495,153 @@ public class ClassPage {
     	//reading data from table
     	int total_rows = driver.findElements(By.xpath("//table[@role='grid']//tr")).size();
     	System.out.println(total_rows);      	        	
+    	ArrayList<String> sortedList = new ArrayList<>(); 
     	
     	for(int r=1; r < total_rows; r++) {
-    		String staffname = driver.findElement(By.xpath("//tbody//tr["+r+"]//td[7]")).getText();
-    		System.out.println(staffname);
-    		if(staffname != null) {
-    		System.out.println(staffname);
-    		}else {    			
-    			System.out.println("Staff name is not present in the table!");
+    		
+    		List<WebElement> staffnames = driver.findElements(By.xpath("//tbody//tr["+r+"]//td[7]"));       		
+    		//Collections.sort(staffnames);
+    		if(staffnames != null) {
+    			sortedList.add(staffnames.get(0).getText());    
     		}
-    }
+    		else {    			
+    			System.out.println("Staff name is not present in the row!");
+    		}
+    	}
+    	
+		Collections.sort(sortedList);
+		
+		for(String s : sortedList) {
+			System.out.println(s); 				
+		}
     }
   
+   public void clickSortBatchName() {//sortBatchIcon	   
+	   sortBatchIcon.click();
+   }
+   public void clickClassTopicSort() {
+	   sortClassTopicIcon.click();
+   }
+   public void clickClassDescSort() {
+	   sortClassTopicIcon.click();
+   }
+   public void clickClassStatusSort() {
+	   sortClassStatusIcon.click();
+   }
+   public void clickClassDateSort() {
+	   sortClassDateIcon.click();
+   }
+   public void clickClassStaffnameSort() {
+	   sortClassStaffnameIcon.click();
+   }
+   public void clickDelete() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".cdk-overlay-backdrop")));
+		WebElement deleteIcon = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@class='action']//button[@icon='pi pi-trash']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteIcon);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", deleteIcon);
+
+	}
+
+   public void enterClassDetailsData() throws InterruptedException {
+		driver.findElement(By.xpath("//input[@placeholder='Select a Batch Name']")).sendKeys("SMPO10");
+		driver.findElement(By.xpath("//input[@id='classTopic']")).sendKeys("Java");
+		driver.findElement(By.xpath("//input[@id='classDescription']")).sendKeys("test01");
+		// date picker
+		Thread.sleep(3000);
+		WebElement date = driver.findElement(By.xpath("//input[@id='icon']"));
+		Thread.sleep(3000);
+		date.sendKeys("10/29/2024");
+		driver.findElement(By.xpath("//span[@class='p-button-icon pi pi-calendar']")).click();
+		driver.findElement(By.xpath("//input[@id='classNo']")).isEnabled();
+		WebElement ele = driver.findElement(By.xpath("//label[normalize-space()='Recording']"));
+		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView()", ele);
+		System.out.println(js.executeScript("return window.pageYOffset"));
+		driver.findElement(By.xpath("//input[@placeholder='Select a Staff Name']")).sendKeys("Karan");
+		driver.findElement(By.xpath(
+				"//p-radiobutton[@ng-reflect-input-id='Active']//div[@ng-reflect-ng-class='[object Object]']//div[@ng-reflect-ng-class='[object Object]']"))
+				.click();
+		driver.findElement(By.id("saveClass")).click();
+   }
+   public void enterInvalidClassDetailsData() throws InterruptedException {
+		driver.findElement(By.xpath("//input[@placeholder='Select a Batch Name']")).sendKeys(" ");
+		driver.findElement(By.xpath("//input[@id='classTopic']")).sendKeys(" ");
+		driver.findElement(By.xpath("//input[@id='classDescription']")).sendKeys("test01");
+		// date picker
+		Thread.sleep(3000);
+		WebElement date = driver.findElement(By.xpath("//input[@id='icon']"));
+		Thread.sleep(3000);
+		date.sendKeys(" ");
+		driver.findElement(By.xpath("//span[@class='p-button-icon pi pi-calendar']")).click();
+		driver.findElement(By.xpath("//input[@id='classNo']")).isEnabled();
+		WebElement ele = driver.findElement(By.xpath("//label[normalize-space()='Recording']"));
+		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView()", ele);
+		System.out.println(js.executeScript("return window.pageYOffset"));
+		driver.findElement(By.xpath("//input[@placeholder='Select a Staff Name']")).sendKeys(" ");
+		driver.findElement(By.xpath(
+				"//p-radiobutton[@ng-reflect-input-id='Active']//div[@ng-reflect-ng-class='[object Object]']//div[@ng-reflect-ng-class='[object Object]']"))
+				.click();
+		driver.findElement(By.id("saveClass")).click();
+  }
+   public void enterUpdateClassDetailsData() throws InterruptedException {
+		driver.findElement(By.xpath("//input[@placeholder='Select a Batch Name']")).isEnabled();
+		driver.findElement(By.xpath("//input[@id='classTopic']")).isEnabled();
+		driver.findElement(By.xpath("//input[@id='classDescription']")).sendKeys("test description for java");
+		// date picker
+		Thread.sleep(3000);
+		WebElement date = driver.findElement(By.xpath("//input[@id='icon']"));
+		Thread.sleep(3000);
+		date.sendKeys("10/29/2024");
+		driver.findElement(By.xpath("//span[@class='p-button-icon pi pi-calendar']")).click();
+		driver.findElement(By.xpath("//input[@id='classNo']")).isEnabled();
+		WebElement ele = driver.findElement(By.xpath("//label[normalize-space()='Recording']"));
+		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView()", ele);
+		System.out.println(js.executeScript("return window.pageYOffset"));
+		driver.findElement(By.xpath("//input[@placeholder='Select a Staff Name']")).sendKeys("Karan");
+		driver.findElement(By.xpath(
+				"//p-radiobutton[@ng-reflect-input-id='Active']//div[@ng-reflect-ng-class='[object Object]']//div[@ng-reflect-ng-class='[object Object]']"))
+				.click();
+		driver.findElement(By.id("saveClass")).click();
+  }
+   @SuppressWarnings("unused")
+public boolean getAssertionMsg() {			
+		String classtopicErr = driver.findElement(By.xpath("//small[@class='p-invalid ng-star-inserted']")).getText();
+		String classdateErr = driver.findElement(By.xpath("//small[normalize-space()='Class Date is required.']")).getText();
+		String noofclassesErr = driver.findElement(By.xpath("//small[normalize-space()='No. of Classes is required.']"))
+				.getText();
+		return true;				
+   }
    
+   public void getAlert() {
+	   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	   wait.until(ExpectedConditions.alertIsPresent());
+	   Alert alt = driver.switchTo().alert();
+		System.out.println(alt.getText()); 
+		alt.accept();
+	   
+   }
+   public String checkToastMessage() {
+	  
+	   By toastSummary = By.xpath("//div[@class='p-toast-summary ng-tns-c91-27']") ;
+   	   By toastDetail = By.xpath("//div[@class='p-toast-detail ng-tns-c91-28']") ;   
+	   System.out.println("waiting for toast to appear...");
+		WebDriverWait wait = new WebDriverWait(driver,java.time.Duration.ofMillis(5000));
+		WebElement td = wait.until(ExpectedConditions.presenceOfElementLocated(toastDetail));
+	
+		WebElement ts = driver.findElement(toastSummary);
+		
+		String alertMessage = ts.getText() + " " + td.getText();
+		//String alertMessage = toastMsg.toString();
+		
+		System.out.println("Toast message..." + alertMessage);
+
+		return alertMessage;
+   }
 }
