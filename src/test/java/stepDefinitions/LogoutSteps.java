@@ -12,14 +12,14 @@ import utilities.CommonMethods;
 import utilities.PropertyLoader;
 
 
-public class TC05_LogoutSteps extends CommonMethods {
+public class LogoutSteps extends CommonMethods {
 
     WebDriver driver = appHooks.getDriver();
     LoginPage lp = new LoginPage(driver);
     DashboardPage dp = new DashboardPage(driver);
     private PropertyLoader propertyLoader;
 
-    public TC05_LogoutSteps() {
+    public LogoutSteps() {
         propertyLoader = new PropertyLoader();
     }
 
