@@ -1,6 +1,8 @@
 package stepDefinitions;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -124,13 +126,15 @@ public class LoginSteps extends CommonMethods {
 	}
 
 	@Then("Admin should see Admin in gray color")
-	public void admin_should_see_admin_in_gray_color() {
-
-	}
+		public void admin_should_see_admin_in_gray_color() {
+		String textColor =lp.txtUserName.getCssValue("color");
+		Assert.assertEquals("rgba(0, 0, 0, 0.87)", textColor);
+	 }
 
 	@Then("Admin should see password in gray color")
 	public void admin_should_see_password_in_gray_color() {
-
+		String textColor =lp.txtPassword.getCssValue("color");
+		Assert.assertEquals("rgba(0, 0, 0, 0.87)", textColor);
 	}
 
 	@Given("Admin is in login Page")
@@ -139,13 +143,11 @@ public class LoginSteps extends CommonMethods {
 	}
 	@When("Admin enter invalid credentials  and clicks login button")
 	public void admin_enter_invalid_credentials_and_clicks_login_button() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+
 	}
 	@Then("Admin should land on dashboard page \\( centre of the page will be empty , menu bar is present).")
 	public void admin_should_land_on_dashboard_page_centre_of_the_page_will_be_empty_menu_bar_is_present() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		Assert.assertTrue(isElementPresent(lp.dashboardMenuBar));
 	}
 
 	@When("Admin enter valid credentials  and clicks login button")
@@ -158,8 +160,93 @@ public class LoginSteps extends CommonMethods {
 	@Then("Admin should land on dashboard page")
 	public void admin_should_land_on_dashboard_page() {
 	    String title = getPageTitle(driver);
-	    Assert.assertEquals(title, "LMS - Learning Management System");
+	    Assert.assertEquals(title, "LMS");
 	}
+
+	@When("Admin enter valid credentials  and clicks login button through keyboard")
+	public void admin_enter_valid_credentials_and_clicks_login_button_through_keyboard() {
+		lp.loginKeyboardActions();
+	}
+
+	@When("Admin enter valid credentials  and clicks login button through mouse")
+	public void admin_enter_valid_credentials_and_clicks_login_button_through_mouse() {
+		lp.loginMouseActions();
+	}
+
+//Data-Driven
+@When("Admin enter valid credentials {string} {string} and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button(String sheetname, String name) {
+	// Get valid username and password from Excel based on sheet name and identifier name
+	String username = getDataFromExcel(sheetname, "username", 1);
+	String password = getDataFromExcel(sheetname, "password", 1);
+
+	lp.sendUnamePwd(username,password);
+	lp.clickLogin();
+
+}
+
+@When("Admin enter invalid credentials {string} {string} and clicks login button")
+public void admin_enter_invalid_credentials_and_clicks_login_button(String sheetname, String name) {
+	String username = getDataFromExcel(sheetname, "username", 2);
+	String password = getDataFromExcel(sheetname, "password", 2);
+
+	lp.sendUnamePwd(username,password);
+	lp.clickLogin();
+//	System.out.println(lp.errMsg.getText());
+//	lp.txtUserName.clear();
+//	lp.txtUserName.click();
+//	lp.txtPassword.clear();
+//	lp.txtPassword.click();
+//	lp.clickLogin();
+
+//	System.out.println(lp.errMsgPassword.getText());
+//	String username = getDataFromExcel(sheetname, "username", 2);
+	}
+
+	@When("Admin enter value only in password  {string} {string} and clicks login button")
+	public void admin_enter_value_only_in_password_and_clicks_login_button(String sheetname, String name) {
+		lp.txtUserName.clear();
+		lp.txtUserName.click();
+		 String username = getDataFromExcel(sheetname, "username", 3);
+		String password = getDataFromExcel(sheetname, "password", 3);
+
+		lp.sendUnamePwd(username,password);
+		lp.clickLogin();
+		System.out.println(lp.errMsgUsername.getText());
+	}
+
+	@When("Admin enter value only in Adminname {string} {string} and clicks login button")
+	public void admin_enter_value_only_in_adminname_and_clicks_login_button(String sheetname, String name) {
+
+		String username = getDataFromExcel(sheetname, "username", 4);
+		lp.txtPassword.click();
+		String password = getDataFromExcel(sheetname, "password", 4);
+		lp.txtPassword.click();
+		lp.sendUnamePwd(username,password);
+		lp.clickLogin();
+	}
+
+	@Then("Error message please check Adminname\\/password")
+	public void error_message_please_check_adminname_password() {
+		 Assert.assertEquals(lp.errMsgUsername.getText(), "Please enter your user name");
+		 Assert.assertEquals(lp.errMsgPassword.getText(), "Please enter your password");
+	}
+
+	@Then("verify the error message Please enter your user name")
+	public void verify_the_error_message_please_enter_your_user_name() {
+		Assert.assertEquals(lp.errMsgUsername.getText(), "Please enter your user name");
+	}
+
+	@Then("verify Error message Please enter your password")
+	public void verify_error_message_please_enter_your_password() {
+		Assert.assertEquals(lp.errMsgPassword.getText(), "Please enter your password");
+	}
+	@Then("Verify Error message Invalid username and password Please try again.")
+	public void verify_error_message_invalid_username_and_password_please_try_again() {
+		Assert.assertEquals(lp.errMsg.getText(),"Invalid username and password Please try again");
+	}
+
+
 
 	/*
 	@Given("Admin is in login page")

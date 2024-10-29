@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,27 +24,40 @@ public class DashboardPage extends CommonMethods {
 		PageFactory.initElements(driver, this);
 	}
 
-	// Locating Elements
-	@FindBy(xpath = "//span[normalize-space()='Program']")
-	WebElement lnkProgram;
 
-	@FindBy(xpath = "//button[normalize-space()='Add New Program']")
-	WebElement lnkAddProgram;
+	@FindBy(how = How.XPATH, using = "//body")
+	public WebElement DB_Body;
 
-	@FindBy(xpath = "//span[normalize-space()='Batch']")
-	WebElement lnkBatch;
+	@FindBy(how = How.XPATH, using = "//span[normalize-space()='LMS - Learning Management System']")
+	public WebElement DB_Title;
 
-	@FindBy(xpath = "//button[normalize-space()='Add New Batch']")
-	WebElement lnkAddBatch;
+	@FindBy(how = How.XPATH, using = "//mat-toolbar[@class='mat-toolbar mat-primary mat-toolbar-single-row ng-star-inserted']//div[@class='ng-star-inserted']")
+	public WebElement DB_MenuItems;
 
-	@FindBy(xpath = "//span[normalize-space()='Class']")
-	WebElement lnkClass;
+	//Locating Elements ////button[normalize-space()='Add New Program']
 
-	@FindBy(xpath = "//button[normalize-space()='Add New Class']")
-	WebElement lnkAddClass;
+	//mat-toolbar[@class='mat-toolbar mat-primary mat-toolbar-single-row ng-star-inserted']//div[@class='ng-star-inserted']/button[@id='program']
+	@FindBy(xpath="//span[normalize-space()='Program']")
+	public WebElement lnkProgram;
+	
+	@FindBy(xpath="//button[normalize-space()='Add New Program']")
+	public WebElement lnkAddProgram;
+	
+	@FindBy(xpath="//span[normalize-space()='Batch']")
+ 	public WebElement lnkBatch;
 
-	@FindBy(xpath = "//span[normalize-space()='Logout']")
-	WebElement lnkLogout;
+	@FindBy(xpath="//button[normalize-space()='Add New Batch']")
+	public WebElement lnkAddBatch;
+	
+	@FindBy(xpath="//span[normalize-space()='Class']")
+	public WebElement lnkClass;
+	
+	@FindBy(xpath="//button[normalize-space()='Add New Class']")
+	public WebElement lnkAddClass;
+	
+	@FindBy(xpath="//span[normalize-space()='Logout']")
+	public WebElement lnkLogout;
+	
 
 	public void clickProgramLink() {
 		lnkProgram.click();
