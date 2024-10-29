@@ -1,0 +1,57 @@
+[INFO ]2024-10-2821:56:36.411[main]utilities.LoggerLoad1)-Manage Batch Page navigation worked
+[INFO ]2024-10-2821:56:36.419[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2821:57:09.873[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2821:57:41.498[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2821:58:12.378[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2821:58:43.684[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2821:59:15.581[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2821:59:44.488[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:00:16.629[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:00:50.556[main]utilities.LoggerLoad1)-Manage Batch page validation completed
+[INFO ]2024-10-2822:00:50.558[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:01:23.363[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:01:55.113[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:02:26.127[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:03:01.140[main]utilities.LoggerLoad1)-Add New Batch Popup Opened
+[INFO ]2024-10-2822:03:01.142[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:04:39.699[main]utilities.LoggerLoad1)-Add New Batch field validation completed
+[INFO ]2024-10-2822:04:39.711[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:05:18.241[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:05:53.445[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:06:30.968[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:07:41.771[main]utilities.LoggerLoad1)-Batch created with only mandatory fields
+[INFO ]2024-10-2822:07:41.773[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:08:49.925[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:10:01.287[main]utilities.LoggerLoad1)-Batch created with all fields
+[INFO ]2024-10-2822:10:01.289[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:11:11.336[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:11:46.936[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:12:22.879[main]utilities.LoggerLoad1)-Edit batch opened
+[INFO ]2024-10-2822:12:22.882[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:12:57.197[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:13:32.909[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:14:15.612[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:14:57.945[main]utilities.LoggerLoad1)-Batch edited successfully
+[INFO ]2024-10-2822:14:57.947[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:15:38.596[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:16:13.015[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:16:48.151[main]utilities.LoggerLoad1)-Batch successully deleted
+[INFO ]2024-10-2822:16:48.153[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:17:21.443[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:17:55.829[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:18:33.933[main]utilities.LoggerLoad1)-Based on row count, batch is deleted successfully
+[INFO ]2024-10-2822:18:33.935[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:19:14.485[main]utilities.LoggerLoad1)-Based on row count, batch is deleted successfully
+[INFO ]2024-10-2822:19:14.489[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:20:50.981[main]utilities.LoggerLoad1)-Pagination validated for Next page
+[INFO ]2024-10-2822:20:50.987[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:22:27.565[main]utilities.LoggerLoad1)-Pagination validated for Last page
+[INFO ]2024-10-2822:22:27.572[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:25:04.804[main]utilities.LoggerLoad1)-Pagination validated for Previous page
+[INFO ]2024-10-2822:25:04.809[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:27:13.797[main]utilities.LoggerLoad1)-Pagination validated for First page
+[INFO ]2024-10-2822:27:13.806[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:27:48.401[main]utilities.LoggerLoad1)-Search validation completed
+[INFO ]2024-10-2822:27:48.406[main]utilities.LoggerLoad1)-Quitting the browser 
+[INFO ]2024-10-2822:28:23.968[main]utilities.LoggerLoad1)-Admin logged out successfully
+[INFO ]2024-10-2822:28:23.970[main]utilities.LoggerLoad1)-Quitting the browser 

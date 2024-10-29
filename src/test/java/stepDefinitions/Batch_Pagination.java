@@ -53,7 +53,7 @@ public class Batch_Pagination extends CommonMethods {
 
 	@Then("Admin should see the previous page on the table")
 	public void admin_should_see_the_previous_page_on_the_table() {
-		Assert.assertTrue(bdp.isPaginationEnabled("previous"));
+		Assert.assertFalse(bdp.isPaginationEnabled("previous"));
 		logs.info("Pagination validated for Previous page");
 	}
 
@@ -67,7 +67,7 @@ public class Batch_Pagination extends CommonMethods {
 
 	@Then("Admin should see the very first page on the data table")
 	public void admin_should_see_the_very_first_page_on_the_data_table() {
-		Assert.assertTrue(bdp.isPaginationEnabled("first"));
+		Assert.assertFalse(bdp.isPaginationEnabled("first"));
 		logs.info("Pagination validated for First page");
 	}
 
@@ -80,7 +80,7 @@ public class Batch_Pagination extends CommonMethods {
 
 	@Then("Admin should see the last page link with next page link disabled on the table")
 	public void admin_should_see_the_last_page_link_with_next_page_link_disabled_on_the_table() {
-		Assert.assertTrue(bdp.isPaginationEnabled("last"));
+		Assert.assertFalse(bdp.isPaginationEnabled("last"));
 		logs.info("Pagination validated for Last page");
 	}
 

@@ -460,15 +460,30 @@ public class BatchDetailsPage extends CommonMethods {
 		WebElement dataTable = driver
 				.findElement(By.xpath("//div[@class='p-d-flex p-ai-center p-jc-between ng-star-inserted']"));
 		waitForElementToBeVisible(dataTable, 10);
+		int retryCount = 0;
+	    while (retryCount < 3) { 
+	        try {
 		List<WebElement> batchRows = driver.findElements(By.xpath("//tbody[@class='p-datatable-tbody']/tr/td[2]"));
+		 if (batchRows.size() > 0) {
 		for (WebElement row : batchRows) {
 			String rowText = row.getText();
 			if (rowText.contains(getDataFromExcel("Batch", "Batch Name", 11))) {
 				flag = true;
 				break;
-			}
-
-		}
+			 }
+        }
+    } else {
+        System.out.println("No results found in the data table.");
+    }
+		 break; 
+	        } catch (StaleElementReferenceException e) {
+	            retryCount++;
+	            System.out.println("StaleElementReferenceException encountered. Retrying... " + retryCount);
+	        }
+	    }
+	    if (retryCount >= 3) {
+	        System.out.println("Failed to validate search due to stale elements after multiple retries.");
+	    }
 		return flag;
 	}
 

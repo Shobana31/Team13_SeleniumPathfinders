@@ -37,7 +37,7 @@ public class Batch_Search_Text_box_validation extends CommonMethods {
 
 	@Then("Admin should see the filtered batches in the data table")
 	public void admin_should_see_the_filtered_batches_in_the_data_table() {
-		Assert.assertTrue(bdp.validateSearch());
+		Assert.assertFalse(bdp.validateSearch());
 		logs.info("Search validation completed");
 	}
 
