@@ -13,12 +13,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.LoginPage;
 import utilities.CommonMethods;
+import utilities.LoggerLoad;
 import utilities.PropertyLoader;
 
 public class LoginSteps extends CommonMethods {
 	
 	 WebDriver driver = appHooks.getDriver();
 	 LoginPage lp = new LoginPage(driver);
+	 LoggerLoad logs = new LoggerLoad();
 	 private PropertyLoader propertyLoader;
 
 	 public LoginSteps() {
@@ -42,11 +44,12 @@ public class LoginSteps extends CommonMethods {
 		Assert.assertEquals(getPageTitle(driver), "LMS");
 	}
 
-	//scenario-2
+
 	@When("Admin gives the invalid LMS portal URL")
 	public void admin_gives_the_invalid_lms_portal_url() {
 		driver.get(propertyLoader.getProperty("LMSUrl2"));
 	}
+	
 	@Then("Admin should recieve {int} page not found error")
 	public void admin_should_recieve_page_not_found_error(Integer int1) {
 		retriveStatusCode(int1);
@@ -70,7 +73,7 @@ public class LoginSteps extends CommonMethods {
 
 	@Then("Admin should see  LMS - Learning Management System")
 	public void admin_should_see_lms_learning_management_system() {
-//		Assert.assertEquals(elementGetText(lp.visibletxtLoginToLMS), "Please login to LMS application");
+	    Assert.assertEquals(elementGetText(lp.visibletxtLoginToLMS), "Please login to LMS application");
 	}
 
 	@Then("Admin should see company name below the app name")
@@ -141,26 +144,32 @@ public class LoginSteps extends CommonMethods {
 	public void admin_is_in_login_page() {
 		admin_gives_the_correct_lms_portal_url();
 	}
+	
 	@When("Admin enter invalid credentials  and clicks login button")
 	public void admin_enter_invalid_credentials_and_clicks_login_button() {
-
+		lp.enterIncorrectUserName();
+		lp.enterIncorrectPassword();
+		lp.clickLogin();
 	}
+	
 	@Then("Admin should land on dashboard page \\( centre of the page will be empty , menu bar is present).")
 	public void admin_should_land_on_dashboard_page_centre_of_the_page_will_be_empty_menu_bar_is_present() {
 		Assert.assertTrue(isElementPresent(lp.dashboardMenuBar));
 	}
 
-	@When("Admin enter valid credentials  and clicks login button")
+	@When("Admin enter valid credentials and clicks login button")
 	public void admin_enter_valid_credentials_and_clicks_login_button() {
 		
 		lp.enterUsername();
 		lp.enterPassword();
 		lp.clickLogin();
+	
 	}
+	
 	@Then("Admin should land on dashboard page")
 	public void admin_should_land_on_dashboard_page() {
-	    String title = getPageTitle(driver);
-	    Assert.assertEquals(title, "LMS");
+	    Assert.assertEquals(getPageTitle(driver), "LMS");
+		logs.info("Admin logged in successfully");
 	}
 
 	@When("Admin enter valid credentials  and clicks login button through keyboard")
@@ -173,73 +182,34 @@ public class LoginSteps extends CommonMethods {
 		lp.loginMouseActions();
 	}
 
-//Data-Driven
-@When("Admin enter valid credentials {string} {string} and clicks login button")
-public void admin_enter_valid_credentials_and_clicks_login_button(String sheetname, String name) {
-	// Get valid username and password from Excel based on sheet name and identifier name
-	String username = getDataFromExcel(sheetname, "username", 1);
-	String password = getDataFromExcel(sheetname, "password", 1);
 
-	lp.sendUnamePwd(username,password);
-	lp.clickLogin();
 
-}
+	@Then("Error message invalid username and password")
+	public void error_message_invalid_username_and_password() {
+		Assert.assertEquals(lp.getErrorMessage(), "Invalid username and password Please try again");
 
-@When("Admin enter invalid credentials {string} {string} and clicks login button")
-public void admin_enter_invalid_credentials_and_clicks_login_button(String sheetname, String name) {
-	String username = getDataFromExcel(sheetname, "username", 2);
-	String password = getDataFromExcel(sheetname, "password", 2);
-
-	lp.sendUnamePwd(username,password);
-	lp.clickLogin();
-//	System.out.println(lp.errMsg.getText());
-//	lp.txtUserName.clear();
-//	lp.txtUserName.click();
-//	lp.txtPassword.clear();
-//	lp.txtPassword.click();
-//	lp.clickLogin();
-
-//	System.out.println(lp.errMsgPassword.getText());
-//	String username = getDataFromExcel(sheetname, "username", 2);
 	}
 
-	@When("Admin enter value only in password  {string} {string} and clicks login button")
-	public void admin_enter_value_only_in_password_and_clicks_login_button(String sheetname, String name) {
-		lp.txtUserName.clear();
-		lp.txtUserName.click();
-		 String username = getDataFromExcel(sheetname, "username", 3);
-		String password = getDataFromExcel(sheetname, "password", 3);
-
-		lp.sendUnamePwd(username,password);
-		lp.clickLogin();
-		System.out.println(lp.errMsgUsername.getText());
+	@When("Admin enter value only in password and clicks login button")
+	public void admin_enter_value_only_in_password_and_clicks_login_button() {
+	    lp.enterPassword();
+	    lp.clickLogin();
 	}
-
-	@When("Admin enter value only in Adminname {string} {string} and clicks login button")
-	public void admin_enter_value_only_in_adminname_and_clicks_login_button(String sheetname, String name) {
-
-		String username = getDataFromExcel(sheetname, "username", 4);
-		lp.txtPassword.click();
-		String password = getDataFromExcel(sheetname, "password", 4);
-		lp.txtPassword.click();
-		lp.sendUnamePwd(username,password);
-		lp.clickLogin();
-	}
-
-	@Then("Error message please check Adminname\\/password")
-	public void error_message_please_check_adminname_password() {
-		 Assert.assertEquals(lp.errMsgUsername.getText(), "Please enter your user name");
-		 Assert.assertEquals(lp.errMsgPassword.getText(), "Please enter your password");
-	}
-
+	
 	@Then("verify the error message Please enter your user name")
 	public void verify_the_error_message_please_enter_your_user_name() {
-		Assert.assertEquals(lp.errMsgUsername.getText(), "Please enter your user name");
+		Assert.assertFalse(lp.getPasswordcssColor());
 	}
 
+	@When("Admin enter value only in Adminname and clicks login button")
+	public void admin_enter_value_only_in_adminname_and_clicks_login_button() {
+	   lp.enterUsername();
+	   lp.clickLogin();
+	}
+	
 	@Then("verify Error message Please enter your password")
 	public void verify_error_message_please_enter_your_password() {
-		Assert.assertEquals(lp.errMsgPassword.getText(), "Please enter your password");
+		Assert.assertEquals(lp.getUsernamecssColor(), "rgba(0, 0, 0, 0.87)");
 	}
 	@Then("Verify Error message Invalid username and password Please try again.")
 	public void verify_error_message_invalid_username_and_password_please_try_again() {
@@ -248,26 +218,5 @@ public void admin_enter_invalid_credentials_and_clicks_login_button(String sheet
 
 
 
-	/*
-	@Given("Admin is in login page")
-	public void admin_is_in_login_page() {
-		admin_gives_the_correct_lms_portal_url();
-	}
-
-	@When("Admin enter valid credentials")
-	public void admin_enter_valid_credentials() {
-	   hp.enterUsername();
-	   hp.enterPassword();
-	   hp.clickLogin();
-	
-	  
-	}
-
-	@Then("Admin should land on the dashboard page")
-	public void admin_should_land_on_the_dashboard_page() {
-	    String title = hp.getDashboardTitle();
-	    Assert.assertEquals(title, "LMS - Learning Management System");
-	}
-*/
 
 }

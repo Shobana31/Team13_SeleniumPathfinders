@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">68 methods, 5 failed,   63 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the response time&quot;, &quot;Validating Dashboard Page&quot;)">runScenario("Verify the response time", "Validating Dashboard Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify LMS title&quot;, &quot;Validating Dashboard Page&quot;)">runScenario("Verify LMS title", "Validating Dashboard Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate LMS title has correct spelling and space&quot;, &quot;Validating Dashboard Page&quot;)">runScenario("Validate LMS title has correct spelling and space", "Validating Dashboard Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify after login Admin lands on dashboard page&quot;, &quot;Validating Dashboard Page&quot;)">runScenario("Verify after login Admin lands on dashboard page", "Validating Dashboard Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate navigation bar text&quot;, &quot;Validating Dashboard Page&quot;)">runScenario("Validate navigation bar text", "Validating Dashboard Page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate input data missing for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("validate input data missing for mandatory fields", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate &quot;heading&quot; in the Batch Page&quot;, &quot;Batch Page Validation&quot;)">runScenario("Validate "heading" in the Batch Page", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate all the fields exist in pop up&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate all the fields exist in pop up", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate sign in content&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate sign in content", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate batchname prefix selected program name&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate batchname prefix selected program name", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify text field is present&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify text field is present", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the alignment input field for the login&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify the alignment input field for the login", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate login credentials with null password&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate login credentials with null password", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify company name&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify company name", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate single row delete with checkbox&quot;, &quot;Delete multiple batches with check box&quot;)">runScenario("Validate single row delete with checkbox", "Delete multiple batches with check box")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate cancel button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("validate cancel button in Batch details pop up", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate yes button on the confirm alert box in delete batch&quot;, &quot;Delete batch validation&quot;)">runScenario("Validate yes button on the confirm alert box in delete batch", "Delete batch validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate batch name prefix box is not editable&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate batch name prefix box is not editable", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate &quot;Checkbox&quot; in the Datatable header row&quot;, &quot;Batch Page Validation&quot;)">runScenario("Validate "Checkbox" in the Datatable header row", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate input data only for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate input data only for mandatory fields", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify text on the first text field&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify text on the first text field", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the alignment of the login button&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify the alignment of the login button", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate checkbox in each data rows&quot;, &quot;Batch Page Validation&quot;)">runScenario("validate checkbox in each data rows", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify logout function&quot;, &quot;Validation on Logout button&quot;)">runScenario("Verify logout function", "Validation on Logout button")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate batch name  value is disabled to edit&quot;, &quot;Admin is on the batch page&quot;)">runScenario("Validate batch name  value is disabled to edit", "Admin is on the batch page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate logout option in the header is visible and enabled from the batch page&quot;, &quot;LogOut of the ap...)">runScenario("Validate logout option in the header is visible and enabled from the batch page", "LogOut of the ap...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate login credentials with null Adminname&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate login credentials with null Adminname", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate close icon on the batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("validate close icon on the batch details pop up", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate delete Icon on any row in delete batch&quot;, &quot;Delete batch validation&quot;)">runScenario("validate delete Icon on any row in delete batch", "Delete batch validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify input descriptive test in password field&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify input descriptive test in password field", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Admin is able to land on login page&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify Admin is able to land on login page", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify asterik next to password text&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify asterik next to password text", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate &quot;sort icon&quot; next to all the datatable header&quot;, &quot;Batch Page Validation&quot;)">runScenario("Validate "sort icon" next to all the datatable header", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate save button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("validate save button in Batch details pop up", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate last page link&quot;, &quot;Pagination&quot;)">runScenario("validate last page link", "Pagination")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate editing description and No. of classes fields with invalid data in the pop up&quot;, &quot;Edit batc...)">runScenario("Validate editing description and No. of classes fields with invalid data in the pop up", "Edit batc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate cancel button in Batch details pop up&quot;, &quot;Edit batch validation&quot;)">runScenario("validate cancel button in Batch details pop up", "Edit batch validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate login with valid credentials&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate login with valid credentials", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate program name  value is disabled to edit&quot;, &quot;Admin is on the batch page&quot;)">runScenario("Validate program name  value is disabled to edit", "Admin is on the batch page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify input descriptive test in Admin field&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify input descriptive test in Admin field", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate edit icon in each data rows&quot;, &quot;Batch Page Validation&quot;)">runScenario("Validate edit icon in each data rows", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Admin is able to land on home page with invalid URL&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify Admin is able to land on home page with invalid URL", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate &quot;Title&quot; in Batch Page&quot;, &quot;Batch Page Validation&quot;)">runScenario("Validate "Title" in Batch Page", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;verify Login button is present&quot;, &quot;Login  Page Verification&quot;)">runScenario("verify Login button is present", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Admin Navigate to Batch page successfully&quot;, &quot;Batch Page Navigation&quot;)">runScenario("Verify Admin Navigate to Batch page successfully", "Batch Page Navigation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify asterik next to Admin text&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify asterik next to Admin text", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate serach box functionality&quot;, &quot;Search Text box validation&quot;)">runScenario("validate serach box functionality", "Search Text box validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify text on the second text field&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify text on the second text field", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate login with invalid credentials&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate login with invalid credentials", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate delete icon in each data rows&quot;, &quot;Batch Page Validation&quot;)">runScenario("validate delete icon in each data rows", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Admin able to click on the Add new Batch Option&quot;, &quot;Add New Batch&quot;)">runScenario("Validate Admin able to click on the Add new Batch Option", "Add New Batch")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify for broken link&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify for broken link", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the text spelling in the page&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify the text spelling in the page", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate next page link&quot;, &quot;Pagination&quot;)">runScenario("Validate next page link", "Pagination")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate close Icon on the alert box in delete batch&quot;, &quot;Delete batch validation&quot;)">runScenario("validate close Icon on the alert box in delete batch", "Delete batch validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the company logo&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify the company logo", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate the backward page link&quot;, &quot;Pagination&quot;)">runScenario("validate the backward page link", "Pagination")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Datatable headers&quot;, &quot;Batch Page Validation&quot;)">runScenario("Validate Datatable headers", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify sub menu displayed in batch menu bar&quot;, &quot;Add New Batch&quot;)">runScenario("Verify sub menu displayed in batch menu bar", "Add New Batch")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate save button in Batch details pop up&quot;, &quot;Edit batch validation&quot;)">runScenario("validate save button in Batch details pop up", "Edit batch validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate disabled &quot;Delete Icon&quot; under the header in the Batch Page&quot;, &quot;Batch Page Validation&quot;)">runScenario("Validate disabled "Delete Icon" under the header in the Batch Page", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify application name&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify application name", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate batch name suffix box should accept only numbers&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate batch name suffix box should accept only numbers", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate multiple row delete with checkbox&quot;, &quot;Delete multiple batches with check box&quot;)">runScenario("Validate multiple row delete with checkbox", "Delete multiple batches with check box")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate pagination in the Batch Page&quot;, &quot;Batch Page Validation&quot;)">runScenario("Validate pagination in the Batch Page", "Batch Page Validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate no button on the confirm alert box in delete batch&quot;, &quot;Delete batch validation&quot;)">runScenario("validate no button on the confirm alert box in delete batch", "Delete batch validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Edit icon feature in any row&quot;, &quot;Admin is on the batch page&quot;)">runScenario("Validate Edit icon feature in any row", "Admin is on the batch page")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate the first page link&quot;, &quot;Pagination&quot;)">runScenario("validate the first page link", "Pagination")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the response time&quot;, &quot;Validating Dashboard Page&quot;)">
+                  </a> <!-- runScenario("Verify the response time", "Validating Dashboard Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the response time","Validating Dashboard Page")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;Admin enter valid credentials and clicks login button&quot;)
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify LMS title&quot;, &quot;Validating Dashboard Page&quot;)">
+                  </a> <!-- runScenario("Verify LMS title", "Validating Dashboard Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify LMS title","Validating Dashboard Page")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;Admin enter valid credentials and clicks login button&quot;)
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate LMS title has correct spelling and space&quot;, &quot;Validating Dashboard Page&quot;)">
+                  </a> <!-- runScenario("Validate LMS title has correct spelling and space", "Validating Dashboard Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate LMS title has correct spelling and space","Validating Dashboard Page")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;Admin enter valid credentials and clicks login button&quot;)
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify after login Admin lands on dashboard page&quot;, &quot;Validating Dashboard Page&quot;)">
+                  </a> <!-- runScenario("Verify after login Admin lands on dashboard page", "Validating Dashboard Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify after login Admin lands on dashboard page","Validating Dashboard Page")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;Admin enter valid credentials and clicks login button&quot;)
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate navigation bar text&quot;, &quot;Validating Dashboard Page&quot;)">
+                  </a> <!-- runScenario("Validate navigation bar text", "Validating Dashboard Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate navigation bar text","Validating Dashboard Page")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;Admin enter valid credentials and clicks login button&quot;)
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate input data missing for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("validate input data missing for mandatory fields", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate input data missing for mandatory fields","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate &quot;heading&quot; in the Batch Page&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate "heading" in the Batch Page", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate "heading" in the Batch Page","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate all the fields exist in pop up&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("Validate all the fields exist in pop up", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate all the fields exist in pop up","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate sign in content&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate sign in content", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate sign in content","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate batchname prefix selected program name&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("Validate batchname prefix selected program name", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate batchname prefix selected program name","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify text field is present&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify text field is present", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify text field is present","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the alignment input field for the login&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the alignment input field for the login", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the alignment input field for the login","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate login credentials with null password&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate login credentials with null password", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate login credentials with null password","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify company name&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify company name", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify company name","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate single row delete with checkbox&quot;, &quot;Delete multiple batches with check box&quot;)">
+                  </a> <!-- runScenario("Validate single row delete with checkbox", "Delete multiple batches with check box") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate single row delete with checkbox","Delete multiple batches with check box")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate cancel button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("validate cancel button in Batch details pop up", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate cancel button in Batch details pop up","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate yes button on the confirm alert box in delete batch&quot;, &quot;Delete batch validation&quot;)">
+                  </a> <!-- runScenario("Validate yes button on the confirm alert box in delete batch", "Delete batch validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate yes button on the confirm alert box in delete batch","Delete batch validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate batch name prefix box is not editable&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("Validate batch name prefix box is not editable", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate batch name prefix box is not editable","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate &quot;Checkbox&quot; in the Datatable header row&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate "Checkbox" in the Datatable header row", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate "Checkbox" in the Datatable header row","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate input data only for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("Validate input data only for mandatory fields", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate input data only for mandatory fields","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify text on the first text field&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify text on the first text field", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify text on the first text field","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the alignment of the login button&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the alignment of the login button", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the alignment of the login button","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate checkbox in each data rows&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("validate checkbox in each data rows", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate checkbox in each data rows","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify logout function&quot;, &quot;Validation on Logout button&quot;)">
+                  </a> <!-- runScenario("Verify logout function", "Validation on Logout button") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify logout function","Validation on Logout button")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate batch name  value is disabled to edit&quot;, &quot;Admin is on the batch page&quot;)">
+                  </a> <!-- runScenario("Validate batch name  value is disabled to edit", "Admin is on the batch page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate batch name  value is disabled to edit","Admin is on the batch page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate logout option in the header is visible and enabled from the batch page&quot;, &quot;LogOut of the ap...)">
+                  </a> <!-- runScenario("Validate logout option in the header is visible and enabled from the batch page", "LogOut of the ap...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate logout option in the header is visible and enabled from the batch page","LogOut of the application from the batch page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate login credentials with null Adminname&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate login credentials with null Adminname", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate login credentials with null Adminname","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate close icon on the batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("validate close icon on the batch details pop up", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate close icon on the batch details pop up","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate delete Icon on any row in delete batch&quot;, &quot;Delete batch validation&quot;)">
+                  </a> <!-- runScenario("validate delete Icon on any row in delete batch", "Delete batch validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate delete Icon on any row in delete batch","Delete batch validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify input descriptive test in password field&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify input descriptive test in password field", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify input descriptive test in password field","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Admin is able to land on login page&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify Admin is able to land on login page", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Admin is able to land on login page","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify asterik next to password text&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify asterik next to password text", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify asterik next to password text","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate &quot;sort icon&quot; next to all the datatable header&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate "sort icon" next to all the datatable header", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate "sort icon" next to all the datatable header","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate save button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("validate save button in Batch details pop up", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate save button in Batch details pop up","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate last page link&quot;, &quot;Pagination&quot;)">
+                  </a> <!-- runScenario("validate last page link", "Pagination") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate last page link","Pagination")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate editing description and No. of classes fields with invalid data in the pop up&quot;, &quot;Edit batc...)">
+                  </a> <!-- runScenario("Validate editing description and No. of classes fields with invalid data in the pop up", "Edit batc...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate editing description and No. of classes fields with invalid data in the pop up","Edit batch validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate cancel button in Batch details pop up&quot;, &quot;Edit batch validation&quot;)">
+                  </a> <!-- runScenario("validate cancel button in Batch details pop up", "Edit batch validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate cancel button in Batch details pop up","Edit batch validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate login with valid credentials&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate login with valid credentials", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate login with valid credentials","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate program name  value is disabled to edit&quot;, &quot;Admin is on the batch page&quot;)">
+                  </a> <!-- runScenario("Validate program name  value is disabled to edit", "Admin is on the batch page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate program name  value is disabled to edit","Admin is on the batch page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify input descriptive test in Admin field&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify input descriptive test in Admin field", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify input descriptive test in Admin field","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate edit icon in each data rows&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate edit icon in each data rows", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate edit icon in each data rows","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Admin is able to land on home page with invalid URL&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify Admin is able to land on home page with invalid URL", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Admin is able to land on home page with invalid URL","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate &quot;Title&quot; in Batch Page&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate "Title" in Batch Page", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate "Title" in Batch Page","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;verify Login button is present&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("verify Login button is present", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("verify Login button is present","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Admin Navigate to Batch page successfully&quot;, &quot;Batch Page Navigation&quot;)">
+                  </a> <!-- runScenario("Verify Admin Navigate to Batch page successfully", "Batch Page Navigation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Admin Navigate to Batch page successfully","Batch Page Navigation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify asterik next to Admin text&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify asterik next to Admin text", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify asterik next to Admin text","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate serach box functionality&quot;, &quot;Search Text box validation&quot;)">
+                  </a> <!-- runScenario("validate serach box functionality", "Search Text box validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate serach box functionality","Search Text box validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify text on the second text field&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify text on the second text field", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify text on the second text field","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate login with invalid credentials&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate login with invalid credentials", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate login with invalid credentials","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate delete icon in each data rows&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("validate delete icon in each data rows", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate delete icon in each data rows","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Admin able to click on the Add new Batch Option&quot;, &quot;Add New Batch&quot;)">
+                  </a> <!-- runScenario("Validate Admin able to click on the Add new Batch Option", "Add New Batch") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Admin able to click on the Add new Batch Option","Add New Batch")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify for broken link&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify for broken link", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify for broken link","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the text spelling in the page&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the text spelling in the page", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the text spelling in the page","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate next page link&quot;, &quot;Pagination&quot;)">
+                  </a> <!-- runScenario("Validate next page link", "Pagination") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate next page link","Pagination")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate close Icon on the alert box in delete batch&quot;, &quot;Delete batch validation&quot;)">
+                  </a> <!-- runScenario("validate close Icon on the alert box in delete batch", "Delete batch validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate close Icon on the alert box in delete batch","Delete batch validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the company logo&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the company logo", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the company logo","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate the backward page link&quot;, &quot;Pagination&quot;)">
+                  </a> <!-- runScenario("validate the backward page link", "Pagination") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate the backward page link","Pagination")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Datatable headers&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate Datatable headers", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Datatable headers","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify sub menu displayed in batch menu bar&quot;, &quot;Add New Batch&quot;)">
+                  </a> <!-- runScenario("Verify sub menu displayed in batch menu bar", "Add New Batch") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify sub menu displayed in batch menu bar","Add New Batch")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate save button in Batch details pop up&quot;, &quot;Edit batch validation&quot;)">
+                  </a> <!-- runScenario("validate save button in Batch details pop up", "Edit batch validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate save button in Batch details pop up","Edit batch validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate disabled &quot;Delete Icon&quot; under the header in the Batch Page&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate disabled "Delete Icon" under the header in the Batch Page", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate disabled "Delete Icon" under the header in the Batch Page","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify application name&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify application name", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify application name","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate batch name suffix box should accept only numbers&quot;, &quot;Add New Batch details pop up&quot;)">
+                  </a> <!-- runScenario("Validate batch name suffix box should accept only numbers", "Add New Batch details pop up") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate batch name suffix box should accept only numbers","Add New Batch details pop up")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate multiple row delete with checkbox&quot;, &quot;Delete multiple batches with check box&quot;)">
+                  </a> <!-- runScenario("Validate multiple row delete with checkbox", "Delete multiple batches with check box") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate multiple row delete with checkbox","Delete multiple batches with check box")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate pagination in the Batch Page&quot;, &quot;Batch Page Validation&quot;)">
+                  </a> <!-- runScenario("Validate pagination in the Batch Page", "Batch Page Validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate pagination in the Batch Page","Batch Page Validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate no button on the confirm alert box in delete batch&quot;, &quot;Delete batch validation&quot;)">
+                  </a> <!-- runScenario("validate no button on the confirm alert box in delete batch", "Delete batch validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate no button on the confirm alert box in delete batch","Delete batch validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Edit icon feature in any row&quot;, &quot;Admin is on the batch page&quot;)">
+                  </a> <!-- runScenario("Validate Edit icon feature in any row", "Admin is on the batch page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Edit icon feature in any row","Admin is on the batch page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate the first page link&quot;, &quot;Pagination&quot;)">
+                  </a> <!-- runScenario("validate the first page link", "Pagination") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate the first page link","Pagination")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(68);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runner.TestRunner')
+data.setCell(0, 3, 154576);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runner.TestRunner')
+data.setCell(1, 3, 126368);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runner.TestRunner')
+data.setCell(2, 3, 96042);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runner.TestRunner')
+data.setCell(3, 3, 95549);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runner.TestRunner')
+data.setCell(4, 3, 94441);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runner.TestRunner')
+data.setCell(5, 3, 69453);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runner.TestRunner')
+data.setCell(6, 3, 68909);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runner.TestRunner')
+data.setCell(7, 3, 68499);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runner.TestRunner')
+data.setCell(8, 3, 64393);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.TestRunner')
+data.setCell(9, 3, 47479);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.TestRunner')
+data.setCell(10, 3, 40006);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runner.TestRunner')
+data.setCell(11, 3, 39782);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runner.TestRunner')
+data.setCell(12, 3, 38617);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runner.TestRunner')
+data.setCell(13, 3, 36620);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runner.TestRunner')
+data.setCell(14, 3, 35778);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runner.TestRunner')
+data.setCell(15, 3, 34787);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runner.TestRunner')
+data.setCell(16, 3, 33582);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runner.TestRunner')
+data.setCell(17, 3, 33460);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runner.TestRunner')
+data.setCell(18, 3, 32574);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runner.TestRunner')
+data.setCell(19, 3, 32235);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'runner.TestRunner')
+data.setCell(20, 3, 32218);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'runner.TestRunner')
+data.setCell(21, 3, 32135);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'runner.TestRunner')
+data.setCell(22, 3, 31734);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'runner.TestRunner')
+data.setCell(23, 3, 31461);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'runner.TestRunner')
+data.setCell(24, 3, 31176);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'runner.TestRunner')
+data.setCell(25, 3, 31062);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'runner.TestRunner')
+data.setCell(26, 3, 30920);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'runner.TestRunner')
+data.setCell(27, 3, 29902);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'runner.TestRunner')
+data.setCell(28, 3, 29877);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'runner.TestRunner')
+data.setCell(29, 3, 29874);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'runner.TestRunner')
+data.setCell(30, 3, 29607);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'runner.TestRunner')
+data.setCell(31, 3, 29580);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'runner.TestRunner')
+data.setCell(32, 3, 29263);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'runner.TestRunner')
+data.setCell(33, 3, 28861);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'runner.TestRunner')
+data.setCell(34, 3, 28788);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'runner.TestRunner')
+data.setCell(35, 3, 28643);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'runner.TestRunner')
+data.setCell(36, 3, 28600);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'runner.TestRunner')
+data.setCell(37, 3, 28542);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'runner.TestRunner')
+data.setCell(38, 3, 27764);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'runner.TestRunner')
+data.setCell(39, 3, 27751);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'runner.TestRunner')
+data.setCell(40, 3, 26706);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'runner.TestRunner')
+data.setCell(41, 3, 24524);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'runner.TestRunner')
+data.setCell(42, 3, 23498);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'runScenario')
+data.setCell(43, 2, 'runner.TestRunner')
+data.setCell(43, 3, 20930);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'runScenario')
+data.setCell(44, 2, 'runner.TestRunner')
+data.setCell(44, 3, 20734);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'runScenario')
+data.setCell(45, 2, 'runner.TestRunner')
+data.setCell(45, 3, 18711);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'runScenario')
+data.setCell(46, 2, 'runner.TestRunner')
+data.setCell(46, 3, 18534);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'runScenario')
+data.setCell(47, 2, 'runner.TestRunner')
+data.setCell(47, 3, 18070);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'runScenario')
+data.setCell(48, 2, 'runner.TestRunner')
+data.setCell(48, 3, 17380);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'runScenario')
+data.setCell(49, 2, 'runner.TestRunner')
+data.setCell(49, 3, 17253);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'runScenario')
+data.setCell(50, 2, 'runner.TestRunner')
+data.setCell(50, 3, 17230);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'runScenario')
+data.setCell(51, 2, 'runner.TestRunner')
+data.setCell(51, 3, 16666);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'runScenario')
+data.setCell(52, 2, 'runner.TestRunner')
+data.setCell(52, 3, 16526);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'runScenario')
+data.setCell(53, 2, 'runner.TestRunner')
+data.setCell(53, 3, 16426);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'runScenario')
+data.setCell(54, 2, 'runner.TestRunner')
+data.setCell(54, 3, 16348);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'runScenario')
+data.setCell(55, 2, 'runner.TestRunner')
+data.setCell(55, 3, 16310);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'runScenario')
+data.setCell(56, 2, 'runner.TestRunner')
+data.setCell(56, 3, 16115);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'runScenario')
+data.setCell(57, 2, 'runner.TestRunner')
+data.setCell(57, 3, 15949);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'runScenario')
+data.setCell(58, 2, 'runner.TestRunner')
+data.setCell(58, 3, 15930);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'runScenario')
+data.setCell(59, 2, 'runner.TestRunner')
+data.setCell(59, 3, 15479);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'runScenario')
+data.setCell(60, 2, 'runner.TestRunner')
+data.setCell(60, 3, 15178);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'runScenario')
+data.setCell(61, 2, 'runner.TestRunner')
+data.setCell(61, 3, 14934);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'runScenario')
+data.setCell(62, 2, 'runner.TestRunner')
+data.setCell(62, 3, 14552);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'runScenario')
+data.setCell(63, 2, 'runner.TestRunner')
+data.setCell(63, 3, 14542);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'runScenario')
+data.setCell(64, 2, 'runner.TestRunner')
+data.setCell(64, 3, 14503);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'runScenario')
+data.setCell(65, 2, 'runner.TestRunner')
+data.setCell(65, 3, 14416);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'runScenario')
+data.setCell(66, 2, 'runner.TestRunner')
+data.setCell(66, 3, 14318);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'runScenario')
+data.setCell(67, 2, 'runner.TestRunner')
+data.setCell(67, 3, 10170);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 38 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@5ad755c5)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Admin is able to land on login page", "Login  Page Verification")</span>
+                <span class="method-start">310 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Admin is able to land on home page with invalid URL", "Login  Page Verification")</span>
+                <span class="method-start">18871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify for broken link", "Login  Page Verification")</span>
+                <span class="method-start">29042 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the text spelling in the page", "Login  Page Verification")</span>
+                <span class="method-start">76523 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the company logo", "Login  Page Verification")</span>
+                <span class="method-start">92835 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify application name", "Login  Page Verification")</span>
+                <span class="method-start">109262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify company name", "Login  Page Verification")</span>
+                <span class="method-start">124743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate sign in content", "Login  Page Verification")</span>
+                <span class="method-start">139248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify text field is present", "Login  Page Verification")</span>
+                <span class="method-start">153792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify text on the first text field", "Login  Page Verification")</span>
+                <span class="method-start">170142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify asterik next to Admin text", "Login  Page Verification")</span>
+                <span class="method-start">187373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify text on the second text field", "Login  Page Verification")</span>
+                <span class="method-start">203901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify asterik next to password text", "Login  Page Verification")</span>
+                <span class="method-start">221282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the alignment input field for the login", "Login  Page Verification")</span>
+                <span class="method-start">237400 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("verify Login button is present", "Login  Page Verification")</span>
+                <span class="method-start">252335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the alignment of the login button", "Login  Page Verification")</span>
+                <span class="method-start">268285 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify input descriptive test in Admin field", "Login  Page Verification")</span>
+                <span class="method-start">285541 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify input descriptive test in password field", "Login  Page Verification")</span>
+                <span class="method-start">303613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate login with valid credentials", "Login  Page Verification")</span>
+                <span class="method-start">320281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate login with invalid credentials", "Login  Page Verification")</span>
+                <span class="method-start">343780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate login credentials with null Adminname", "Login  Page Verification")</span>
+                <span class="method-start">364712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate login credentials with null password", "Login  Page Verification")</span>
+                <span class="method-start">383425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify after login Admin lands on dashboard page", "Validating Dashboard Page")</span>
+                <span class="method-start">404161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify the response time", "Validating Dashboard Page")</span>
+                <span class="method-start">420100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify LMS title", "Validating Dashboard Page")</span>
+                <span class="method-start">435281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate navigation bar text", "Validating Dashboard Page")</span>
+                <span class="method-start">449601 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate LMS title has correct spelling and space", "Validating Dashboard Page")</span>
+                <span class="method-start">464155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Admin Navigate to Batch page successfully", "Batch Page Navigation")</span>
+                <span class="method-start">478573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate "Title" in Batch Page", "Batch Page Validation")</span>
+                <span class="method-start">505281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate "heading" in the Batch Page", "Batch Page Validation")</span>
+                <span class="method-start">533034 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate disabled "Delete Icon" under the header in the Batch Page", "Batch Page Validation")</span>
+                <span class="method-start">563956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate pagination in the Batch Page", "Batch Page Validation")</span>
+                <span class="method-start">592558 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate edit icon in each data rows", "Batch Page Validation")</span>
+                <span class="method-start">620324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate delete icon in each data rows", "Batch Page Validation")</span>
+                <span class="method-start">650228 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate checkbox in each data rows", "Batch Page Validation")</span>
+                <span class="method-start">678771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Datatable headers", "Batch Page Validation")</span>
+                <span class="method-start">708380 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate "Checkbox" in the Datatable header row", "Batch Page Validation")</span>
+                <span class="method-start">737243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate "sort icon" next to all the datatable header", "Batch Page Validation")</span>
+                <span class="method-start">766033 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify sub menu displayed in batch menu bar", "Add New Batch")</span>
+                <span class="method-start">794677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Admin able to click on the Add new Batch Option", "Add New Batch")</span>
+                <span class="method-start">824553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate all the fields exist in pop up", "Add New Batch details pop up")</span>
+                <span class="method-start">856016 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate batchname prefix selected program name", "Add New Batch details pop up")</span>
+                <span class="method-start">952060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate batch name suffix box should accept only numbers", "Add New Batch details pop up")</span>
+                <span class="method-start">985644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate batch name prefix box is not editable", "Add New Batch details pop up")</span>
+                <span class="method-start">1017379 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate input data only for mandatory fields", "Add New Batch details pop up")</span>
+                <span class="method-start">1054000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate input data missing for mandatory fields", "Add New Batch details pop up")</span>
+                <span class="method-start">1122910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate save button in Batch details pop up", "Add New Batch details pop up")</span>
+                <span class="method-start">1187305 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate cancel button in Batch details pop up", "Add New Batch details pop up")</span>
+                <span class="method-start">1256760 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate close icon on the batch details pop up", "Add New Batch details pop up")</span>
+                <span class="method-start">1325260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Edit icon feature in any row", "Admin is on the batch page")</span>
+                <span class="method-start">1358722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate program name  value is disabled to edit", "Admin is on the batch page")</span>
+                <span class="method-start">1389900 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate batch name  value is disabled to edit", "Admin is on the batch page")</span>
+                <span class="method-start">1422137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate editing description and No. of classes fields with invalid data in the pop up", "Edit batc...)</span>
+                <span class="method-start">1453201 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate save button in Batch details pop up", "Edit batch validation")</span>
+                <span class="method-start">1488980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate cancel button in Batch details pop up", "Edit batch validation")</span>
+                <span class="method-start">1528764 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate delete Icon on any row in delete batch", "Delete batch validation")</span>
+                <span class="method-start">1567383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate yes button on the confirm alert box in delete batch", "Delete batch validation")</span>
+                <span class="method-start">1597262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate no button on the confirm alert box in delete batch", "Delete batch validation")</span>
+                <span class="method-start">1629838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate close Icon on the alert box in delete batch", "Delete batch validation")</span>
+                <span class="method-start">1659103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate single row delete with checkbox", "Delete multiple batches with check box")</span>
+                <span class="method-start">1688685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate multiple row delete with checkbox", "Delete multiple batches with check box")</span>
+                <span class="method-start">1723474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate next page link", "Pagination")</span>
+                <span class="method-start">1763482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate last page link", "Pagination")</span>
+                <span class="method-start">1857925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate the backward page link", "Pagination")</span>
+                <span class="method-start">1953476 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate the first page link", "Pagination")</span>
+                <span class="method-start">2108057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate serach box functionality", "Search Text box validation")</span>
+                <span class="method-start">2234427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate logout option in the header is visible and enabled from the batch page", "LogOut of the ap...)</span>
+                <span class="method-start">2266647 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify logout function", "Validation on Logout button")</span>
+                <span class="method-start">2298784 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">2323313 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

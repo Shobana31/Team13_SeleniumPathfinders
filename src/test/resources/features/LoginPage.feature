@@ -110,18 +110,23 @@ Feature: Login  Page Verification
 
 Scenario: Validate login with valid credentials
  Given Admin is in login Page
-When Admin enter valid credentials  and clicks login button 
+When Admin enter valid credentials and clicks login button 
 Then Admin should land on dashboard page 
 
-  Scenario Outline:  Validate login with invalid credentials
+  Scenario:  Validate login with invalid credentials
     Given Admin is in login Page
     When Admin enter invalid credentials  and clicks login button
-    Then Admin should land on dashboard page ( centre of the page will be empty , menu bar is present).
+    Then Error message invalid username and password
 
-    Examples:
-      | username       | password          |
-      | sdet@gmail.com | LmsHackathon@2024 |
-      | invalid        | invalid           |
-      |                | LmsHackathon@2024 |
-      | sdet@gmail.com |                   |
 
+  Scenario:  Validate login credentials with null Adminname
+    Given Admin is in login Page
+    When Admin enter value only in password and clicks login button 
+    Then verify the error message Please enter your user name
+    
+
+      Scenario: Validate login credentials with null password
+    Given Admin is in login Page
+    When Admin enter value only in Adminname and clicks login button 
+    Then verify Error message Please enter your password
+    

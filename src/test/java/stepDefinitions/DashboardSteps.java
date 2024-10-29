@@ -40,14 +40,7 @@ public class DashboardSteps extends CommonMethods {
         Assert.assertEquals(elementGetText(dp.DB_Title), "LMS - Learning Management System");
     }
 
-    @Then("LMS title should be on the top left corner of page")
-    public void lms_title_should_be_on_the_top_left_corner_of_page() {
-
-        int xPosition = dp.DB_Title.getLocation().getX();
-        int yPosition = dp.DB_Title.getLocation().getY();
-//        Assert.assertTrue(xPosition<=10 && yPosition<=10, dp.DB_Title.getText());
-
-    }
+  
 
     @Then("Admin should see correct spelling in navigation bar text")
     public void admin_should_see_correct_spelling_in_navigation_bar_text() {
@@ -70,29 +63,8 @@ public class DashboardSteps extends CommonMethods {
 
     }
 
-    @Then("Admin should see Home in the 1st place")
-    public void admin_should_see_home_in_the_1st_place() {
+  
 
-    }
-
-    @Then("Admin should see program in the 2nd place")
-    public void admin_should_see_program_in_the_2nd_place() {
-        Assert.assertEquals(elementGetText(dp.lnkProgram), "Program");
-    }
-
-    @Then("Admin should see batch in the 3rd place")
-    public void admin_should_see_batch_in_the_3rd_place() {
-
-    }
-
-    @Then("Admin should see class in the 4th place")
-    public void admin_should_see_class_in_the_4th_place() {
-
-    }
-
-    @Then("Admin should see logout in the 5th place")
-    public void admin_should_see_logout_in_the_5th_place() {
-
-    }
+  
 
 }

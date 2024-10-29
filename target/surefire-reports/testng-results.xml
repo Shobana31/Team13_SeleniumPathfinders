@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="68" passed="63" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-29T12:24:03 EDT" name="Surefire suite" finished-at="2024-10-29T13:02:46 EDT" duration-ms="2323542">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-29T12:24:03 EDT" name="Surefire test" finished-at="2024-10-29T13:02:46 EDT" duration-ms="2323542">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:24:03 EDT" name="setUpClass" finished-at="2024-10-29T12:24:03 EDT" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5ad755c5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:24:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:24:22 EDT" duration-ms="18534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Admin is able to land on login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:24:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:24:32 EDT" duration-ms="10170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Admin is able to land on home page with invalid URL"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:24:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:25:19 EDT" duration-ms="47479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify for broken link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:25:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:25:36 EDT" duration-ms="16310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the text spelling in the page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:25:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:25:52 EDT" duration-ms="16426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the company logo"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:25:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:26:07 EDT" duration-ms="15479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify application name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:26:07 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:26:22 EDT" duration-ms="14503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify company name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:26:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:26:37 EDT" duration-ms="14542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate sign in content"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:26:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:26:53 EDT" duration-ms="16348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify text field is present"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:26:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:27:10 EDT" duration-ms="17230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify text on the first text field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:27:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:27:27 EDT" duration-ms="16526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify asterik next to Admin text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:27:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:27:44 EDT" duration-ms="17380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify text on the second text field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:27:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:28:00 EDT" duration-ms="16115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify asterik next to password text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:28:00 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:28:15 EDT" duration-ms="14934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the alignment input field for the login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:28:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:28:31 EDT" duration-ms="15949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify Login button is present"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:28:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:28:48 EDT" duration-ms="17253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the alignment of the login button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:28:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:29:06 EDT" duration-ms="18070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify input descriptive test in Admin field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:29:06 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:29:23 EDT" duration-ms="16666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify input descriptive test in password field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:29:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:29:47 EDT" duration-ms="23498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:29:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:30:07 EDT" duration-ms="20930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:30:07 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:30:26 EDT" duration-ms="18711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate login credentials with null Adminname"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:30:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:30:47 EDT" duration-ms="20734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate login credentials with null password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login  Page Verification"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:30:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:31:03 EDT" duration-ms="15930" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify after login Admin lands on dashboard page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating Dashboard Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:31:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:31:18 EDT" duration-ms="15178" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the response time"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating Dashboard Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:31:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:31:32 EDT" duration-ms="14318" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify LMS title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating Dashboard Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:31:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:31:47 EDT" duration-ms="14552" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate navigation bar text"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating Dashboard Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:31:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:32:01 EDT" duration-ms="14416" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate LMS title has correct spelling and space"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating Dashboard Page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:32:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:32:28 EDT" duration-ms="26706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Admin Navigate to Batch page successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Navigation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:32:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:32:56 EDT" duration-ms="27751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate "Title" in Batch Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:32:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:33:27 EDT" duration-ms="30920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate "heading" in the Batch Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:33:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:33:55 EDT" duration-ms="28600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate disabled "Delete Icon" under the header in the Batch Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:33:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:34:23 EDT" duration-ms="27764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate pagination in the Batch Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:34:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:34:53 EDT" duration-ms="29902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate edit icon in each data rows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:34:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:35:22 EDT" duration-ms="28542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate delete icon in each data rows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:35:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:35:51 EDT" duration-ms="29607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate checkbox in each data rows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:35:51 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:36:20 EDT" duration-ms="28861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Datatable headers"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:36:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:36:49 EDT" duration-ms="28788" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate "Checkbox" in the Datatable header row"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:36:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:37:17 EDT" duration-ms="28643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate "sort icon" next to all the datatable header"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Batch Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:37:17 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:37:47 EDT" duration-ms="29874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify sub menu displayed in batch menu bar"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:37:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:38:19 EDT" duration-ms="31461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Admin able to click on the Add new Batch Option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:38:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:39:55 EDT" duration-ms="96042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate all the fields exist in pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:39:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:40:28 EDT" duration-ms="33582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate batchname prefix selected program name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:40:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:41:00 EDT" duration-ms="31734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate batch name suffix box should accept only numbers"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:41:00 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:41:37 EDT" duration-ms="36620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate batch name prefix box is not editable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:41:37 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:42:46 EDT" duration-ms="68909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate input data only for mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:42:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:43:50 EDT" duration-ms="64393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate input data missing for mandatory fields"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:43:50 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:45:00 EDT" duration-ms="69453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate save button in Batch details pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:45:00 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:46:08 EDT" duration-ms="68499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate cancel button in Batch details pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:46:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:46:41 EDT" duration-ms="33460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate close icon on the batch details pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add New Batch details pop up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:46:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:47:13 EDT" duration-ms="31176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Edit icon feature in any row"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin is on the batch page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:47:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:47:45 EDT" duration-ms="32235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate program name  value is disabled to edit"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin is on the batch page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:47:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:48:16 EDT" duration-ms="31062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate batch name  value is disabled to edit"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Admin is on the batch page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:48:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:48:52 EDT" duration-ms="35778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate editing description and No. of classes fields with invalid data in the pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Edit batch validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:48:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:49:32 EDT" duration-ms="39782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate save button in Batch details pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Edit batch validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:49:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:50:10 EDT" duration-ms="38617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate cancel button in Batch details pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Edit batch validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:50:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:50:40 EDT" duration-ms="29877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate delete Icon on any row in delete batch"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete batch validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:50:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:51:13 EDT" duration-ms="32574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate yes button on the confirm alert box in delete batch"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete batch validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:51:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:51:42 EDT" duration-ms="29263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate no button on the confirm alert box in delete batch"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete batch validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:51:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:52:11 EDT" duration-ms="29580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate close Icon on the alert box in delete batch"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete batch validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:52:11 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:52:46 EDT" duration-ms="34787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate single row delete with checkbox"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete multiple batches with check box"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:52:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:53:26 EDT" duration-ms="40006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate multiple row delete with checkbox"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete multiple batches with check box"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:53:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:55:01 EDT" duration-ms="94441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate next page link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pagination"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:55:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:56:36 EDT" duration-ms="95549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate last page link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pagination"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:56:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T12:59:11 EDT" duration-ms="154576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate the backward page link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pagination"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T12:59:11 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T13:01:17 EDT" duration-ms="126368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate the first page link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pagination"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T13:01:17 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T13:01:49 EDT" duration-ms="32218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate serach box functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Text box validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T13:01:49 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T13:02:22 EDT" duration-ms="32135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate logout option in the header is visible and enabled from the batch page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["LogOut of the application from the batch page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T13:02:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-29T13:02:46 EDT" duration-ms="24524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify logout function"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validation on Logout button"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@7674b62c]" started-at="2024-10-29T13:02:46 EDT" name="tearDownClass" finished-at="2024-10-29T13:02:46 EDT" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

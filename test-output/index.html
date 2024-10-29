@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">22 methods, 1 failed,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate login with invalid credentials&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate login with invalid credentials", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,47 +117,107 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate close icon on the batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("validate close icon on the batch details pop up", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the company logo&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify the company logo", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate input data missing for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("validate input data missing for mandatory fields", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify application name&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify application name", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate batch name suffix box should accept only numbers&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate batch name suffix box should accept only numbers", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the alignment of the login button&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify the alignment of the login button", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate input data only for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate input data only for mandatory fields", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate sign in content&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate sign in content", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate batchname prefix selected program name&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate batchname prefix selected program name", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify for broken link&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify for broken link", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate save button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("validate save button in Batch details pop up", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify input descriptive test in Admin field&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify input descriptive test in Admin field", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate all the fields exist in pop up&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate all the fields exist in pop up", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate login with valid credentials&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate login with valid credentials", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate cancel button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("validate cancel button in Batch details pop up", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify asterik next to Admin text&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify asterik next to Admin text", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate batch name prefix box is not editable&quot;, &quot;Add New Batch details pop up&quot;)">runScenario("Validate batch name prefix box is not editable", "Add New Batch details pop up")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Admin is able to land on login page&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify Admin is able to land on login page", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify text on the first text field&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify text on the first text field", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify asterik next to password text&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify asterik next to password text", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify input descriptive test in password field&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify input descriptive test in password field", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify text field is present&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify text field is present", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the alignment input field for the login&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify the alignment input field for the login", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate login credentials with null password&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate login credentials with null password", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify text on the second text field&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify text on the second text field", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Admin is able to land on home page with invalid URL&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify Admin is able to land on home page with invalid URL", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate login credentials with null Adminname&quot;, &quot;Login  Page Verification&quot;)">runScenario("Validate login credentials with null Adminname", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the text spelling in the page&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify the text spelling in the page", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify company name&quot;, &quot;Login  Page Verification&quot;)">runScenario("Verify company name", "Login  Page Verification")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;verify Login button is present&quot;, &quot;Login  Page Verification&quot;)">runScenario("verify Login button is present", "Login  Page Verification")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -158,6 +232,57 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate login with invalid credentials&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate login with invalid credentials", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate login with invalid credentials","Login  Page Verification")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//mat-error[@id=&apos;errormessage&apos;]&quot;}
+  (Session info: chrome=130.0.6723.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.0.1&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7198de8c3b867762f7af4395e0f88eb9, findElement {value=//mat-error[@id=&apos;errormessage&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/14/9snw41b17dg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64033/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7198de8c3b867762f7af4395e0f88eb9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy41.getText(Unknown Source)
+	at pageObjects.LoginPage.getErrorMessage(LoginPage.java:93)
+	at stepDefinitions.LoginSteps.error_message_invalid_username_and_password(LoginSteps.java:189)
+	at ✽.Error message invalid username and password(file:///Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/src/test/resources/features/LoginPage.feature:119)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -166,90 +291,210 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;validate close icon on the batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("validate close icon on the batch details pop up", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Verify the company logo&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the company logo", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("validate close icon on the batch details pop up","Add New Batch details pop up")</span>
+                  <span class="parameters">("Verify the company logo","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;validate input data missing for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("validate input data missing for mandatory fields", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Verify application name&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify application name", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("validate input data missing for mandatory fields","Add New Batch details pop up")</span>
+                  <span class="parameters">("Verify application name","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate batch name suffix box should accept only numbers&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("Validate batch name suffix box should accept only numbers", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Verify the alignment of the login button&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the alignment of the login button", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate batch name suffix box should accept only numbers","Add New Batch details pop up")</span>
+                  <span class="parameters">("Verify the alignment of the login button","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate input data only for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("Validate input data only for mandatory fields", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Validate sign in content&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate sign in content", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate input data only for mandatory fields","Add New Batch details pop up")</span>
+                  <span class="parameters">("Validate sign in content","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate batchname prefix selected program name&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("Validate batchname prefix selected program name", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Verify for broken link&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify for broken link", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate batchname prefix selected program name","Add New Batch details pop up")</span>
+                  <span class="parameters">("Verify for broken link","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;validate save button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("validate save button in Batch details pop up", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Verify input descriptive test in Admin field&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify input descriptive test in Admin field", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("validate save button in Batch details pop up","Add New Batch details pop up")</span>
+                  <span class="parameters">("Verify input descriptive test in Admin field","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate all the fields exist in pop up&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("Validate all the fields exist in pop up", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Validate login with valid credentials&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate login with valid credentials", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate all the fields exist in pop up","Add New Batch details pop up")</span>
+                  <span class="parameters">("Validate login with valid credentials","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;validate cancel button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("validate cancel button in Batch details pop up", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Verify asterik next to Admin text&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify asterik next to Admin text", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("validate cancel button in Batch details pop up","Add New Batch details pop up")</span>
+                  <span class="parameters">("Verify asterik next to Admin text","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate batch name prefix box is not editable&quot;, &quot;Add New Batch details pop up&quot;)">
-                  </a> <!-- runScenario("Validate batch name prefix box is not editable", "Add New Batch details pop up") -->
+                  <a name="runScenario(&quot;Verify Admin is able to land on login page&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify Admin is able to land on login page", "Login  Page Verification") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate batch name prefix box is not editable","Add New Batch details pop up")</span>
+                  <span class="parameters">("Verify Admin is able to land on login page","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify text on the first text field&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify text on the first text field", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify text on the first text field","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify asterik next to password text&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify asterik next to password text", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify asterik next to password text","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify input descriptive test in password field&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify input descriptive test in password field", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify input descriptive test in password field","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify text field is present&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify text field is present", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify text field is present","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the alignment input field for the login&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the alignment input field for the login", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the alignment input field for the login","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate login credentials with null password&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate login credentials with null password", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate login credentials with null password","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify text on the second text field&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify text on the second text field", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify text on the second text field","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Admin is able to land on home page with invalid URL&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify Admin is able to land on home page with invalid URL", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Admin is able to land on home page with invalid URL","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate login credentials with null Adminname&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Validate login credentials with null Adminname", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate login credentials with null Adminname","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the text spelling in the page&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify the text spelling in the page", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the text spelling in the page","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify company name&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("Verify company name", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify company name","Login  Page Verification")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;verify Login button is present&quot;, &quot;Login  Page Verification&quot;)">
+                  </a> <!-- runScenario("verify Login button is present", "Login  Page Verification") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("verify Login button is present","Login  Page Verification")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -259,7 +504,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/14/9snw41b17dgf350s9rf9t0780000gp/T/testng-eclipse-63376004/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/14/9snw41b17dgf350s9rf9t0780000gp/T/testng-eclipse-1581914353/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -316,48 +561,100 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(22);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 101281);
+data.setCell(0, 3, 44832);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.TestRunner')
-data.setCell(1, 3, 72115);
+data.setCell(1, 3, 21468);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.TestRunner')
-data.setCell(2, 3, 69429);
+data.setCell(2, 3, 20694);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.TestRunner')
-data.setCell(3, 3, 67947);
+data.setCell(3, 3, 19867);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runner.TestRunner')
-data.setCell(4, 3, 63236);
+data.setCell(4, 3, 19858);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'runner.TestRunner')
-data.setCell(5, 3, 47355);
+data.setCell(5, 3, 19537);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'runner.TestRunner')
-data.setCell(6, 3, 36566);
+data.setCell(6, 3, 16674);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'runner.TestRunner')
-data.setCell(7, 3, 35838);
+data.setCell(7, 3, 16383);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'runner.TestRunner')
-data.setCell(8, 3, 32788);
+data.setCell(8, 3, 16382);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.TestRunner')
+data.setCell(9, 3, 16207);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.TestRunner')
+data.setCell(10, 3, 16040);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runner.TestRunner')
+data.setCell(11, 3, 15752);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runner.TestRunner')
+data.setCell(12, 3, 15635);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runner.TestRunner')
+data.setCell(13, 3, 15370);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runner.TestRunner')
+data.setCell(14, 3, 15145);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runner.TestRunner')
+data.setCell(15, 3, 15103);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runner.TestRunner')
+data.setCell(16, 3, 15093);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runner.TestRunner')
+data.setCell(17, 3, 15033);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runner.TestRunner')
+data.setCell(18, 3, 14939);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runner.TestRunner')
+data.setCell(19, 3, 14883);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'runner.TestRunner')
+data.setCell(20, 3, 14571);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'runner.TestRunner')
+data.setCell(21, 3, 9561);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -385,48 +682,102 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@775a5a67)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@19b8f1bd)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Validate all the fields exist in pop up", "Add New Batch details pop up")</span>
-                <span class="method-start">922 ms</span>
+                <span class="method-name">runScenario("Verify Admin is able to land on login page", "Login  Page Verification")</span>
+                <span class="method-start">944 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Validate batchname prefix selected program name", "Add New Batch details pop up")</span>
-                <span class="method-start">102287 ms</span>
+                <span class="method-name">runScenario("Verify Admin is able to land on home page with invalid URL", "Login  Page Verification")</span>
+                <span class="method-start">20872 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Validate batch name suffix box should accept only numbers", "Add New Batch details pop up")</span>
-                <span class="method-start">138866 ms</span>
+                <span class="method-name">runScenario("Verify for broken link", "Login  Page Verification")</span>
+                <span class="method-start">30441 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Validate batch name prefix box is not editable", "Add New Batch details pop up")</span>
-                <span class="method-start">174714 ms</span>
+                <span class="method-name">runScenario("Verify the text spelling in the page", "Login  Page Verification")</span>
+                <span class="method-start">75283 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Validate input data only for mandatory fields", "Add New Batch details pop up")</span>
-                <span class="method-start">222080 ms</span>
+                <span class="method-name">runScenario("Verify the company logo", "Login  Page Verification")</span>
+                <span class="method-start">91967 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("validate input data missing for mandatory fields", "Add New Batch details pop up")</span>
-                <span class="method-start">294209 ms</span>
+                <span class="method-name">runScenario("Verify application name", "Login  Page Verification")</span>
+                <span class="method-start">106858 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("validate save button in Batch details pop up", "Add New Batch details pop up")</span>
-                <span class="method-start">357458 ms</span>
+                <span class="method-name">runScenario("Verify company name", "Login  Page Verification")</span>
+                <span class="method-start">122625 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("validate cancel button in Batch details pop up", "Add New Batch details pop up")</span>
-                <span class="method-start">426901 ms</span>
+                <span class="method-name">runScenario("Validate sign in content", "Login  Page Verification")</span>
+                <span class="method-start">137739 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("validate close icon on the batch details pop up", "Add New Batch details pop up")</span>
-                <span class="method-start">494868 ms</span>
+                <span class="method-name">runScenario("Verify text field is present", "Login  Page Verification")</span>
+                <span class="method-start">153789 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify text on the first text field", "Login  Page Verification")</span>
+                <span class="method-start">168893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify asterik next to Admin text", "Login  Page Verification")</span>
+                <span class="method-start">183840 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify text on the second text field", "Login  Page Verification")</span>
+                <span class="method-start">200062 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify asterik next to password text", "Login  Page Verification")</span>
+                <span class="method-start">215438 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the alignment input field for the login", "Login  Page Verification")</span>
+                <span class="method-start">231827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("verify Login button is present", "Login  Page Verification")</span>
+                <span class="method-start">247478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the alignment of the login button", "Login  Page Verification")</span>
+                <span class="method-start">262055 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify input descriptive test in Admin field", "Login  Page Verification")</span>
+                <span class="method-start">277258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify input descriptive test in password field", "Login  Page Verification")</span>
+                <span class="method-start">293652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate login with valid credentials", "Login  Page Verification")</span>
+                <span class="method-start">308692 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate login with invalid credentials", "Login  Page Verification")</span>
+                <span class="method-start">328243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate login credentials with null Adminname", "Login  Page Verification")</span>
+                <span class="method-start">349736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate login credentials with null password", "Login  Page Verification")</span>
+                <span class="method-start">370437 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">527699 ms</span>
+                <span class="method-start">390326 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
