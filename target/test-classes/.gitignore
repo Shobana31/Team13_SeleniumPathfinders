@@ -1,5 +1,5 @@
 /hooks/
-/stepDefinitions/
-/utilities/
 /pageObjects/
 /runner/
+/stepDefinitions/
+/utilities/

@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.TestRunner" time="2323.917" tests="68" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/target/test-classes:/Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/target/classes:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-java/4.25.0/selenium-java-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-api/4.25.0/selenium-api-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.25.0/selenium-chrome-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.25.0/selenium-chromium-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-json/4.25.0/selenium-json-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.25.0/selenium-manager-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.25.0/selenium-devtools-v127-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.25.0/selenium-devtools-v128-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.25.0/selenium-devtools-v129-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.25.0/selenium-devtools-v85-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.25.0/selenium-edge-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.25.0/selenium-firefox-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-http/4.25.0/selenium-http-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.25.0/selenium-ie-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.25.0/selenium-remote-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/guava/guava/33.3.0-jre/guava-33.3.0-jre.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-api/1.42.1/opentelemetry-api-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-context/1.42.1/opentelemetry-context-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.42.1/opentelemetry-exporter-logging-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.42.1/opentelemetry-sdk-common-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.42.1/opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.42.1/opentelemetry-sdk-extension-autoconfigure-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.42.1-alpha/opentelemetry-api-incubator-1.42.1-alpha.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.42.1/opentelemetry-sdk-trace-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.42.1/opentelemetry-sdk-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.42.1/opentelemetry-sdk-metrics-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.42.1/opentelemetry-sdk-logs-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/net/bytebuddy/byte-buddy/1.15.1/byte-buddy-1.15.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-os/4.25.0/selenium-os-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.25.0/selenium-safari-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-support/4.25.0/selenium-support-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-java/7.20.1/cucumber-java-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-core/7.20.1/cucumber-core-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-gherkin/7.20.1/cucumber-gherkin-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.20.1/cucumber-gherkin-messages-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/testng-xml-formatter/0.2.0/testng-xml-formatter-0.2.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/datatable/7.20.1/datatable-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-plugin/7.20.1/cucumber-plugin-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/docstring/7.20.1/docstring-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/html-formatter/21.7.0/html-formatter-21.7.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/junit-xml-formatter/0.5.0/junit-xml-formatter-0.5.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-testng/7.20.1/cucumber-testng-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-junit/7.20.0/cucumber-junit-7.20.0.jar:/Users/mathumathibalakrishnan/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mathumathibalakrishnan/.m2/repository/org/testng/testng/7.7.0/testng-7.7.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/mathumathibalakrishnan/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/qameta/allure/allure-testng/2.17.3/allure-testng-2.17.3.jar:/Users/mathumathibalakrishnan/.m2/repository/io/qameta/allure/allure-java-commons/2.17.3/allure-java-commons-2.17.3.jar:/Users/mathumathibalakrishnan/.m2/repository/io/qameta/allure/allure-model/2.17.3/allure-model-2.17.3.jar:/Users/mathumathibalakrishnan/.m2/repository/io/qameta/allure/allure-test-filter/2.17.3/allure-test-filter-2.17.3.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/poi/poi/5.3.0/poi-5.3.0.jar:/Users/mathumathibalakrishnan/.m2/repository/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/mathumathibalakrishnan/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/mathumathibalakrishnan/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/poi/poi-ooxml/5.3.0/poi-ooxml-5.3.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/poi/poi-ooxml-lite/5.3.0/poi-ooxml-lite-5.3.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/xmlbeans/xmlbeans/5.2.1/xmlbeans-5.2.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.14.0/extentreports-cucumber7-adapter-1.14.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/aventstack/extentreports/5.1.0/extentreports-5.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/mathumathibalakrishnan/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/mathumathibalakrishnan/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/extent-pdf-report/2.12.0/extent-pdf-report-2.12.0.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.14.0/cucumber-pdf-report-2.14.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/mathumathibalakrishnan/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/mathumathibalakrishnan/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/mathumathibalakrishnan/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/mathumathibalakrishnan/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.5.0/rest-assured-cucumber-pdf-report-1.5.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/mathumathibalakrishnan/.m2/repository/com/aventstack/klov-reporter/5.1.0/klov-reporter-5.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/mathumathibalakrishnan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/htmlextentreporter/1.1.0/htmlextentreporter-1.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/extent-excel-report/1.4.0/extent-excel-report-1.4.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-picocontainer/7.20.1/cucumber-picocontainer-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/mathumathibalakrishnan/.m2/repository/com/vimalselvam/cucumber-extentsreport/3.1.1/cucumber-extentsreport-3.1.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.1/log4j-core-2.24.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.1/log4j-api-2.24.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/mathumathibalakrishnan/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/target/surefire/surefirebooter-20241029122402781_3.jar /Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/target/surefire 2024-10-29T12-24-02_738-jvmRun1 surefire-20241029122402781_1tmp surefire_0-20241029122402781_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/target/test-classes:/Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/target/classes:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-java/4.25.0/selenium-java-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-api/4.25.0/selenium-api-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.25.0/selenium-chrome-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.25.0/selenium-chromium-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-json/4.25.0/selenium-json-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.25.0/selenium-manager-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.25.0/selenium-devtools-v127-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.25.0/selenium-devtools-v128-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.25.0/selenium-devtools-v129-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.25.0/selenium-devtools-v85-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.25.0/selenium-edge-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.25.0/selenium-firefox-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-http/4.25.0/selenium-http-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.25.0/selenium-ie-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.25.0/selenium-remote-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/guava/guava/33.3.0-jre/guava-33.3.0-jre.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-api/1.42.1/opentelemetry-api-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-context/1.42.1/opentelemetry-context-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.42.1/opentelemetry-exporter-logging-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.42.1/opentelemetry-sdk-common-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.42.1/opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.42.1/opentelemetry-sdk-extension-autoconfigure-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.42.1-alpha/opentelemetry-api-incubator-1.42.1-alpha.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.42.1/opentelemetry-sdk-trace-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.42.1/opentelemetry-sdk-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.42.1/opentelemetry-sdk-metrics-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.42.1/opentelemetry-sdk-logs-1.42.1.jar:/Users/mathumathibalakrishnan/.m2/repository/net/bytebuddy/byte-buddy/1.15.1/byte-buddy-1.15.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-os/4.25.0/selenium-os-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.25.0/selenium-safari-driver-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/seleniumhq/selenium/selenium-support/4.25.0/selenium-support-4.25.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-java/7.20.1/cucumber-java-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-core/7.20.1/cucumber-core-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-gherkin/7.20.1/cucumber-gherkin-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.20.1/cucumber-gherkin-messages-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/testng-xml-formatter/0.2.0/testng-xml-formatter-0.2.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/datatable/7.20.1/datatable-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-plugin/7.20.1/cucumber-plugin-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/docstring/7.20.1/docstring-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/html-formatter/21.7.0/html-formatter-21.7.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/junit-xml-formatter/0.5.0/junit-xml-formatter-0.5.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-testng/7.20.1/cucumber-testng-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-junit/7.20.0/cucumber-junit-7.20.0.jar:/Users/mathumathibalakrishnan/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mathumathibalakrishnan/.m2/repository/org/testng/testng/7.7.0/testng-7.7.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/mathumathibalakrishnan/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/mathumathibalakrishnan/.m2/repository/io/qameta/allure/allure-testng/2.17.3/allure-testng-2.17.3.jar:/Users/mathumathibalakrishnan/.m2/repository/io/qameta/allure/allure-java-commons/2.17.3/allure-java-commons-2.17.3.jar:/Users/mathumathibalakrishnan/.m2/repository/io/qameta/allure/allure-model/2.17.3/allure-model-2.17.3.jar:/Users/mathumathibalakrishnan/.m2/repository/io/qameta/allure/allure-test-filter/2.17.3/allure-test-filter-2.17.3.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/poi/poi/5.3.0/poi-5.3.0.jar:/Users/mathumathibalakrishnan/.m2/repository/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/mathumathibalakrishnan/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/Users/mathumathibalakrishnan/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/poi/poi-ooxml/5.3.0/poi-ooxml-5.3.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/poi/poi-ooxml-lite/5.3.0/poi-ooxml-lite-5.3.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/xmlbeans/xmlbeans/5.2.1/xmlbeans-5.2.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.14.0/extentreports-cucumber7-adapter-1.14.0.jar:/Users/mathumathibalakrishnan/.m2/repository/com/aventstack/extentreports/5.1.0/extentreports-5.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/mathumathibalakrishnan/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/mathumathibalakrishnan/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/mathumathibalakrishnan/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/extent-pdf-report/2.12.0/extent-pdf-report-2.12.0.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.14.0/cucumber-pdf-report-2.14.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/mathumathibalakrishnan/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/mathumathibalakrishnan/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/mathumathibalakrishnan/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/mathumathibalakrishnan/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.5.0/rest-assured-cucumber-pdf-report-1.5.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/mathumathibalakrishnan/.m2/repository/com/aventstack/klov-reporter/5.1.0/klov-reporter-5.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/mathumathibalakrishnan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/htmlextentreporter/1.1.0/htmlextentreporter-1.1.0.jar:/Users/mathumathibalakrishnan/.m2/repository/tech/grasshopper/extent-excel-report/1.4.0/extent-excel-report-1.4.0.jar:/Users/mathumathibalakrishnan/.m2/repository/io/cucumber/cucumber-picocontainer/7.20.1/cucumber-picocontainer-7.20.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/mathumathibalakrishnan/.m2/repository/com/vimalselvam/cucumber-extentsreport/3.1.1/cucumber-extentsreport-3.1.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.1/log4j-core-2.24.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.1/log4j-api-2.24.1.jar:/Users/mathumathibalakrishnan/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/mathumathibalakrishnan/.m2/repository/org/slf4j/slf4j-simple/1.7.30/slf4j-simple-1.7.30.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mathumathibalakrishnan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders/target/surefire/surefirebooter-20241029122402781_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS"/>
+    <property name="user.name" value="mathumathibalakrishnan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.0.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.2+13"/>
+    <property name="localRepository" value="/Users/mathumathibalakrishnan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/14/9snw41b17dgf350s9rf9t0780000gp/T/"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="/Users/mathumathibalakrishnan/git/Team13_SeleniumPathfinders"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mathumathibalakrishnan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.2+13-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Verify Admin is able to land on login page&quot;, &quot;Login  Page Verification&quot;](1)" classname="runner.TestRunner" time="18.563">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify Admin is able to land on login page &amp#27;[90m# src/test/resources/features/LoginPage.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                     &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m        &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should land on the login page&amp#27;[0m           &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_land_on_the_login_page()&amp#27;[0m
+[INFO ]2024-10-2912:24:21.953[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:24:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Admin is able to land on home page with invalid URL&quot;, &quot;Login  Page Verification&quot;](2)" classname="runner.TestRunner" time="10.166">
+    <system-out><![CDATA[
+@Login-Negative
+Scenario: Verify Admin is able to land on home page with invalid URL &amp#27;[90m# src/test/resources/features/LoginPage.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                                     &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the invalid LMS portal URL&amp#27;[0m                        &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_invalid_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should recieve &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m&amp#27;[32m page not found error&amp#27;[0m                 &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_recieve_page_not_found_error(java.lang.Integer)&amp#27;[0m
+[INFO ]2024-10-2912:24:32.187[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:24:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify for broken link&quot;, &quot;Login  Page Verification&quot;](3)" classname="runner.TestRunner" time="47.48">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify for broken link                     &amp#27;[90m# src/test/resources/features/LoginPage.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                     &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m        &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mHTTP response >= &amp#27;[0m&amp#27;[32m&amp#27;[1m400&amp#27;[0m&amp#27;[32m. Then the link is broken&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.http_response_then_the_link_is_broken(java.lang.Integer)&amp#27;[0m
+[INFO ]2024-10-2912:25:19.612[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:24:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the text spelling in the page&quot;, &quot;Login  Page Verification&quot;](4)" classname="runner.TestRunner" time="16.312">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify the text spelling in the page          &amp#27;[90m# src/test/resources/features/LoginPage.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                        &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m           &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see correct spellings in all fields&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_correct_spellings_in_all_fields()&amp#27;[0m
+[INFO ]2024-10-2912:25:35.976[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:25:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the company logo&quot;, &quot;Login  Page Verification&quot;](5)" classname="runner.TestRunner" time="16.427">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify the company logo              &amp#27;[90m# src/test/resources/features/LoginPage.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m               &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m  &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see logo on the left  side&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_logo_on_the_left_side()&amp#27;[0m
+[INFO ]2024-10-2912:25:52.387[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:25:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify application name&quot;, &quot;Login  Page Verification&quot;](6)" classname="runner.TestRunner" time="15.48">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify application name                         &amp#27;[90m# src/test/resources/features/LoginPage.feature:34&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                          &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m             &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see  LMS - Learning Management System&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_lms_learning_management_system()&amp#27;[0m
+[INFO ]2024-10-2912:26:07.892[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:25:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify company name&quot;, &quot;Login  Page Verification&quot;](7)" classname="runner.TestRunner" time="14.505">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify company name                           &amp#27;[90m# src/test/resources/features/LoginPage.feature:40&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                        &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m           &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see company name below the app name&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_company_name_below_the_app_name()&amp#27;[0m
+[INFO ]2024-10-2912:26:22.397[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:26:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate sign in content&quot;, &quot;Login  Page Verification&quot;](8)" classname="runner.TestRunner" time="14.544">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Validate sign in content                        &amp#27;[90m# src/test/resources/features/LoginPage.feature:46&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                          &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m             &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see &amp#27;[0m&amp#27;[32m&amp#27;[1m"Please login to LMS application"&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see(java.lang.String)&amp#27;[0m
+[INFO ]2024-10-2912:26:36.905[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:26:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify text field is present&quot;, &quot;Login  Page Verification&quot;](9)" classname="runner.TestRunner" time="16.35">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify text field is present        &amp#27;[90m# src/test/resources/features/LoginPage.feature:52&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m              &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see two text field&amp#27;[0m        &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_two_text_field()&amp#27;[0m
+[INFO ]2024-10-2912:26:53.232[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:26:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify text on the first text field&quot;, &quot;Login  Page Verification&quot;](10)" classname="runner.TestRunner" time="17.231">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify text on the first text field      &amp#27;[90m# src/test/resources/features/LoginPage.feature:58&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                   &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m      &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should &amp#27;[0m&amp#27;[32m&amp#27;[1m"User"&amp#27;[0m&amp#27;[32m in the first text field&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_in_the_first_text_field(java.lang.String)&amp#27;[0m
+[INFO ]2024-10-2912:27:10.505[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:27:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify asterik next to Admin text&quot;, &quot;Login  Page Verification&quot;](11)" classname="runner.TestRunner" time="16.527">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify asterik next to Admin text                           &amp#27;[90m# src/test/resources/features/LoginPage.feature:64&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m                         &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see field mandatory (*) symbol next to Admin text&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_field_mandatory_symbol_next_to_admin_text()&amp#27;[0m
+[INFO ]2024-10-2912:27:27.027[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:27:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify text on the second text field&quot;, &quot;Login  Page Verification&quot;](12)" classname="runner.TestRunner" time="17.381">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify text on the second text field          &amp#27;[90m# src/test/resources/features/LoginPage.feature:70&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                        &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m           &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should &amp#27;[0m&amp#27;[32m&amp#27;[1m"Password"&amp#27;[0m&amp#27;[32m in the second text field&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_in_the_second_text_field(java.lang.String)&amp#27;[0m
+[INFO ]2024-10-2912:27:44.413[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:27:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify asterik next to password text&quot;, &quot;Login  Page Verification&quot;](13)" classname="runner.TestRunner" time="16.118">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify asterik next to password text         &amp#27;[90m# src/test/resources/features/LoginPage.feature:76&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                       &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m          &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see * symbol next to password text&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_symbol_next_to_password_text()&amp#27;[0m
+[INFO ]2024-10-2912:28:00.552[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:27:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the alignment input field for the login&quot;, &quot;Login  Page Verification&quot;](14)" classname="runner.TestRunner" time="14.935">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify the alignment input field for the login      &amp#27;[90m# src/test/resources/features/LoginPage.feature:82&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                              &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m                 &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see input field on the centre of the page&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_input_field_on_the_centre_of_the_page()&amp#27;[0m
+[INFO ]2024-10-2912:28:15.478[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:28:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;verify Login button is present&quot;, &quot;Login  Page Verification&quot;](15)" classname="runner.TestRunner" time="15.949">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: verify Login button is present      &amp#27;[90m# src/test/resources/features/LoginPage.feature:88&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m              &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see login button&amp#27;[0m          &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_login_button()&amp#27;[0m
+[INFO ]2024-10-2912:28:31.426[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:28:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the alignment of the login button&quot;, &quot;Login  Page Verification&quot;](16)" classname="runner.TestRunner" time="17.254">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify the alignment of the login button             &amp#27;[90m# src/test/resources/features/LoginPage.feature:94&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                               &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m                  &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see login button on the centre of the page&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_login_button_on_the_centre_of_the_page()&amp#27;[0m
+[INFO ]2024-10-2912:28:48.685[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:28:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify input descriptive test in Admin field&quot;, &quot;Login  Page Verification&quot;](17)" classname="runner.TestRunner" time="18.072">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify input descriptive test in Admin field &amp#27;[90m# src/test/resources/features/LoginPage.feature:100&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                       &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m          &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see Admin in gray color&amp#27;[0m            &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_admin_in_gray_color()&amp#27;[0m
+[INFO ]2024-10-2912:29:06.749[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:28:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify input descriptive test in password field&quot;, &quot;Login  Page Verification&quot;](18)" classname="runner.TestRunner" time="16.668">
+    <system-out><![CDATA[
+@Login-Positive
+Scenario: Verify input descriptive test in password field &amp#27;[90m# src/test/resources/features/LoginPage.feature:106&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin launch the browser&amp#27;[0m                          &amp#27;[90m# stepDefinitions.LoginSteps.admin_launch_the_browser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin gives the correct LMS portal URL&amp#27;[0m             &amp#27;[90m# stepDefinitions.LoginSteps.admin_gives_the_correct_lms_portal_url()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see password in gray color&amp#27;[0m            &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_see_password_in_gray_color()&amp#27;[0m
+[INFO ]2024-10-2912:29:23.429[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:29:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate login with valid credentials&quot;, &quot;Login  Page Verification&quot;](19)" classname="runner.TestRunner" time="23.499">
+    <system-out><![CDATA[
+Scenario: Validate login with valid credentials               &amp#27;[90m# src/test/resources/features/LoginPage.feature:111&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login Page&amp#27;[0m                                &amp#27;[90m# stepDefinitions.LoginSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enter valid credentials  and clicks login button&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_enter_valid_credentials_and_clicks_login_button()&amp#27;[0m
+[INFO ]2024-10-2912:29:46.932[main]utilities.LoggerLoad1]-Admin logged in successfully
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should land on dashboard page&amp#27;[0m                    &amp#27;[90m# stepDefinitions.LoginSteps.admin_should_land_on_dashboard_page()&amp#27;[0m
+[INFO ]2024-10-2912:29:46.933[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:29:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate login with invalid credentials&quot;, &quot;Login  Page Verification&quot;](20)" classname="runner.TestRunner" time="20.931">
+    <system-out><![CDATA[
+Scenario: Validate login with invalid credentials               &amp#27;[90m# src/test/resources/features/LoginPage.feature:116&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login Page&amp#27;[0m                                  &amp#27;[90m# stepDefinitions.LoginSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enter invalid credentials  and clicks login button&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_enter_invalid_credentials_and_clicks_login_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mError message invalid username and password&amp#27;[0m              &amp#27;[90m# stepDefinitions.LoginSteps.error_message_invalid_username_and_password()&amp#27;[0m
+[INFO ]2024-10-2912:30:07.852[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:29:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate login credentials with null Adminname&quot;, &quot;Login  Page Verification&quot;](21)" classname="runner.TestRunner" time="18.713">
+    <system-out><![CDATA[
+Scenario: Validate login credentials with null Adminname          &amp#27;[90m# src/test/resources/features/LoginPage.feature:122&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login Page&amp#27;[0m                                    &amp#27;[90m# stepDefinitions.LoginSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enter value only in password and clicks login button&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_enter_value_only_in_password_and_clicks_login_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify the error message Please enter your user name&amp#27;[0m       &amp#27;[90m# stepDefinitions.LoginSteps.verify_the_error_message_please_enter_your_user_name()&amp#27;[0m
+[INFO ]2024-10-2912:30:26.571[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:30:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate login credentials with null password&quot;, &quot;Login  Page Verification&quot;](22)" classname="runner.TestRunner" time="20.736">
+    <system-out><![CDATA[
+Scenario: Validate login credentials with null password            &amp#27;[90m# src/test/resources/features/LoginPage.feature:128&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login Page&amp#27;[0m                                     &amp#27;[90m# stepDefinitions.LoginSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enter value only in Adminname and clicks login button&amp#27;[0m &amp#27;[90m# stepDefinitions.LoginSteps.admin_enter_value_only_in_adminname_and_clicks_login_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mverify Error message Please enter your password&amp#27;[0m             &amp#27;[90m# stepDefinitions.LoginSteps.verify_error_message_please_enter_your_password()&amp#27;[0m
+[INFO ]2024-10-2912:30:47.298[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:30:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify after login Admin lands on dashboard page&quot;, &quot;Validating Dashboard Page&quot;](23)" classname="runner.TestRunner" time="15.947">
+    <failure message="The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;Admin enter valid credentials and clicks login button&quot;)&#10;public void admin_enter_valid_credentials_and_clicks_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException"><![CDATA[io.cucumber.testng.UndefinedStepException: 
+The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Verify after login Admin lands on dashboard page   &amp#27;[90m# src/test/resources/features/TC02_Dashboard.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login page&amp#27;[0m                               &amp#27;[90m# stepDefinitions.DashboardSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mAdmin enter valid credentials and clicks login button&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mAdmin should see dashboard&amp#27;[0m                            &amp#27;[90m# stepDefinitions.DashboardSteps.admin_should_see_dashboard()&amp#27;[0m
+[INFO ]2024-10-2912:31:03.211[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:30:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the response time&quot;, &quot;Validating Dashboard Page&quot;](24)" classname="runner.TestRunner" time="15.173">
+    <failure message="The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;Admin enter valid credentials and clicks login button&quot;)&#10;public void admin_enter_valid_credentials_and_clicks_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException"><![CDATA[io.cucumber.testng.UndefinedStepException: 
+The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Verify the response time                                     &amp#27;[90m# src/test/resources/features/TC02_Dashboard.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login page&amp#27;[0m                                         &amp#27;[90m# stepDefinitions.DashboardSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mAdmin enter valid credentials and clicks login button&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mMaximum navigation time in milliseconds, defaults to &amp#27;[0m&amp#27;[36m&amp#27;[1m30&amp#27;[0m&amp#27;[36m seconds&amp#27;[0m &amp#27;[90m# stepDefinitions.DashboardSteps.maximum_navigation_time_in_milliseconds_defaults_to_seconds(java.lang.Integer)&amp#27;[0m
+[INFO ]2024-10-2912:31:18.419[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:31:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify LMS title&quot;, &quot;Validating Dashboard Page&quot;](25)" classname="runner.TestRunner" time="14.32">
+    <failure message="The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;Admin enter valid credentials and clicks login button&quot;)&#10;public void admin_enter_valid_credentials_and_clicks_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException"><![CDATA[io.cucumber.testng.UndefinedStepException: 
+The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Verify LMS title                                       &amp#27;[90m# src/test/resources/features/TC02_Dashboard.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login page&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.DashboardSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mAdmin enter valid credentials and clicks login button&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mAdmin should see LMS -Learning management system as title&amp#27;[0m &amp#27;[90m# stepDefinitions.DashboardSteps.admin_should_see_lms_learning_management_system_as_title()&amp#27;[0m
+[INFO ]2024-10-2912:31:32.751[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:31:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate navigation bar text&quot;, &quot;Validating Dashboard Page&quot;](26)" classname="runner.TestRunner" time="14.553">
+    <failure message="The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;Admin enter valid credentials and clicks login button&quot;)&#10;public void admin_enter_valid_credentials_and_clicks_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException"><![CDATA[io.cucumber.testng.UndefinedStepException: 
+The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Validate navigation bar text                          &amp#27;[90m# src/test/resources/features/TC02_Dashboard.feature:19&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login page&amp#27;[0m                                  &amp#27;[90m# stepDefinitions.DashboardSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mAdmin enter valid credentials and clicks login button&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mAdmin should see correct spelling in navigation bar text&amp#27;[0m &amp#27;[90m# stepDefinitions.DashboardSteps.admin_should_see_correct_spelling_in_navigation_bar_text()&amp#27;[0m
+[INFO ]2024-10-2912:31:47.308[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:31:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate LMS title has correct spelling and space&quot;, &quot;Validating Dashboard Page&quot;](27)" classname="runner.TestRunner" time="14.417">
+    <failure message="The step &apos;Admin enter valid credentials and clicks login button&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;Admin enter valid credentials and clicks login button&quot;)&#10;public void admin_enter_valid_credentials_and_clicks_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException"><![CDATA[io.cucumber.testng.UndefinedStepException: 
+The step 'Admin enter valid credentials and clicks login button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Admin enter valid credentials and clicks login button")
+public void admin_enter_valid_credentials_and_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Validate LMS title has correct spelling and space     &amp#27;[90m# src/test/resources/features/TC02_Dashboard.feature:23&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in login page&amp#27;[0m                                  &amp#27;[90m# stepDefinitions.DashboardSteps.admin_is_in_login_page()&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mAdmin enter valid credentials and clicks login button&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mAdmin should see correct spelling and space in LMS title&amp#27;[0m &amp#27;[90m# stepDefinitions.DashboardSteps.admin_should_see_correct_spelling_and_space_in_lms_title()&amp#27;[0m
+[INFO ]2024-10-2912:32:01.702[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:31:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Admin Navigate to Batch page successfully&quot;, &quot;Batch Page Navigation&quot;](28)" classname="runner.TestRunner" time="26.707">
+    <system-out><![CDATA[
+Scenario: Verify Admin Navigate to Batch page successfully &amp#27;[90m# src/test/resources/features/TC04_01_Batch_Page_Navigation.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin successfully Logged on to LMS Portal&amp#27;[0m         &amp#27;[90m# stepDefinitions.Batch_BatchPageNavigation.admin_successfully_logged_on_to_the_lms_portal()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from the header&amp#27;[0m      &amp#27;[90m# stepDefinitions.Batch_BatchPageNavigation.admin_clicks_on_the_batch_menu_from_the_header()&amp#27;[0m
+[INFO ]2024-10-2912:32:28.419[main]utilities.LoggerLoad1]-Manage Batch Page navigation worked
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should be in the Manage Batch Page&amp#27;[0m            &amp#27;[90m# stepDefinitions.Batch_BatchPageNavigation.admin_should_be_in_the_manage_batch_page()&amp#27;[0m
+[INFO ]2024-10-2912:32:28.420[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:32:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate &quot;Title&quot; in Batch Page&quot;, &quot;Batch Page Validation&quot;](29)" classname="runner.TestRunner" time="27.753">
+    <system-out><![CDATA[
+Scenario: Validate "Title" in Batch Page                           &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m                 &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m                  &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the &amp#27;[0m&amp#27;[32m&amp#27;[1m"LMS-Learning Management System"&amp#27;[0m&amp#27;[32m Title&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_title(java.lang.String)&amp#27;[0m
+[INFO ]2024-10-2912:32:56.178[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:32:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate &quot;heading&quot; in the Batch Page&quot;, &quot;Batch Page Validation&quot;](30)" classname="runner.TestRunner" time="30.922">
+    <system-out><![CDATA[
+Scenario: Validate "heading" in the Batch Page     &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m  &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the &amp#27;[0m&amp#27;[32m&amp#27;[1m"Manage Batch"&amp#27;[0m&amp#27;[32m Heading&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_heading(java.lang.String)&amp#27;[0m
+[INFO ]2024-10-2912:33:27.097[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:33:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate disabled &quot;Delete Icon&quot; under the header in the Batch Page&quot;, &quot;Batch Page Validation&quot;](31)" classname="runner.TestRunner" time="28.602">
+    <system-out><![CDATA[
+Scenario: Validate disabled "Delete Icon" under the header in the Batch Page &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m                           &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m                            &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the disabled &amp#27;[0m&amp#27;[32m&amp#27;[1m"Delete Icon"&amp#27;[0m&amp#27;[32m under the header&amp#27;[0m          &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_disabled_under_the_header(java.lang.String)&amp#27;[0m
+[INFO ]2024-10-2912:33:55.681[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:33:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate pagination in the Batch Page&quot;, &quot;Batch Page Validation&quot;](32)" classname="runner.TestRunner" time="27.765">
+    <system-out><![CDATA[
+Scenario: Validate pagination in the Batch Page                              &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:20&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m                           &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m                            &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the enabled pagination controls under the data table&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_enabled_pagination_controls_under_the_data_table()&amp#27;[0m
+[INFO ]2024-10-2912:34:23.454[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:34:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate edit icon in each data rows&quot;, &quot;Batch Page Validation&quot;](33)" classname="runner.TestRunner" time="29.904">
+    <system-out><![CDATA[
+Scenario: Validate edit icon in each data rows     &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m  &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the edit icon in each row&amp#27;[0m  &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_edit_icon_in_each_row()&amp#27;[0m
+[INFO ]2024-10-2912:34:53.361[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:34:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate delete icon in each data rows&quot;, &quot;Batch Page Validation&quot;](34)" classname="runner.TestRunner" time="28.543">
+    <system-out><![CDATA[
+Scenario: validate delete icon in each data rows    &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m  &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m   &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the delete icon in each row&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_delete_icon_in_each_row()&amp#27;[0m
+[INFO ]2024-10-2912:35:21.900[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:35:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate checkbox in each data rows&quot;, &quot;Batch Page Validation&quot;](35)" classname="runner.TestRunner" time="29.608">
+    <system-out><![CDATA[
+Scenario: validate checkbox in each data rows      &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:32&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m  &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the checkbox in each row&amp#27;[0m   &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_checkbox_in_each_row()&amp#27;[0m
+[INFO ]2024-10-2912:35:51.511[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:35:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Datatable headers&quot;, &quot;Batch Page Validation&quot;](36)" classname="runner.TestRunner" time="28.863">
+    <system-out><![CDATA[
+Scenario: Validate Datatable headers                                                                                               &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:36&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m                                                                                 &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m                                                                                  &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+[INFO ]2024-10-2912:36:20.380[main]utilities.LoggerLoad1]-Manage Batch page validation completed
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the datatable headers Batch name, Batch Description,Batch Status, No Of classes, Program Name, Edit/Delete&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_datatable_headers_batch_name_batch_description_batch_status_no_of_classes_program_name_edit_delete()&amp#27;[0m
+[INFO ]2024-10-2912:36:20.381[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:35:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate &quot;Checkbox&quot; in the Datatable header row&quot;, &quot;Batch Page Validation&quot;](37)" classname="runner.TestRunner" time="28.79">
+    <system-out><![CDATA[
+Scenario: Validate "Checkbox" in the Datatable header row         &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:40&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m                &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m                 &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the checkbox  in the datatable header row&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_checkbox_in_the_datatable_header_row()&amp#27;[0m
+[INFO ]2024-10-2912:36:49.163[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:36:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate &quot;sort icon&quot; next to all the datatable header&quot;, &quot;Batch Page Validation&quot;](38)" classname="runner.TestRunner" time="28.644">
+    <system-out><![CDATA[
+Scenario: Validate "sort icon" next to all the datatable header     &amp#27;[90m# src/test/resources/features/TC04_02_Batch_Page_Validation.feature:44&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Dashboard page after Login&amp#27;[0m                  &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_is_on_the_dashboard_page_after_login()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Clicks on the Batch menu from header&amp#27;[0m                   &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_clicks_on_the_batch_menu_from_header()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the sort icon next to all Datatable headers&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_BatchPageValidationSteps.admin_should_see_the_sort_icon_next_to_all_datatable_headers()&amp#27;[0m
+[INFO ]2024-10-2912:37:17.807[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:36:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify sub menu displayed in batch menu bar&quot;, &quot;Add New Batch&quot;](39)" classname="runner.TestRunner" time="29.875">
+    <system-out><![CDATA[
+Scenario: Verify sub menu displayed in batch menu bar           &amp#27;[90m# src/test/resources/features/TC04_03_Add_New_Batch.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Batch page&amp#27;[0m                              &amp#27;[90m# stepDefinitions.Batch_AddNewBatch.admin_is_on_the_batch_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks &amp#27;[0m&amp#27;[32m&amp#27;[1m"Batch"&amp#27;[0m&amp#27;[32m on the navigation bar&amp#27;[0m               &amp#27;[90m# stepDefinitions.Batch_AddNewBatch.admin_clicks_on_the_navigation_bar(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see sub menu in menu bar as &amp#27;[0m&amp#27;[32m&amp#27;[1m"Add New Batch"&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_AddNewBatch.admin_should_see_sub_menu_in_menu_bar_as(java.lang.String)&amp#27;[0m
+[INFO ]2024-10-2912:37:47.677[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:37:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Admin able to click on the Add new Batch Option&quot;, &quot;Add New Batch&quot;](40)" classname="runner.TestRunner" time="31.463">
+    <system-out><![CDATA[
+Scenario: Validate Admin able to click on the Add new Batch Option &amp#27;[90m# src/test/resources/features/TC04_03_Add_New_Batch.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Batch page&amp#27;[0m                                 &amp#27;[90m# stepDefinitions.Batch_AddNewBatch.admin_is_on_the_batch_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on &amp#27;[0m&amp#27;[32m&amp#27;[1m"Add New batch"&amp#27;[0m&amp#27;[32m under the &amp#27;[0m&amp#27;[32m&amp#27;[1m"batch"&amp#27;[0m&amp#27;[32m menu bar&amp#27;[0m  &amp#27;[90m# stepDefinitions.Batch_AddNewBatch.admin_clicks_on_under_the_menu_bar(java.lang.String,java.lang.String)&amp#27;[0m
+[INFO ]2024-10-2912:38:19.144[main]utilities.LoggerLoad1]-Add New Batch Popup Opened
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the Batch Details pop up window&amp#27;[0m            &amp#27;[90m# stepDefinitions.Batch_AddNewBatch.admin_should_see_the_batch_details_pop_up_window()&amp#27;[0m
+[INFO ]2024-10-2912:38:19.145[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:37:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate all the fields exist in pop up&quot;, &quot;Add New Batch details pop up&quot;](41)" classname="runner.TestRunner" time="96.043">
+    <system-out><![CDATA[
+Scenario: Validate all the fields exist in pop up                                                                                                      &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m                                                                                                           &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin checks all the fields are enabled&amp#27;[0m                                                                                                         &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_checks_all_the_fields_are_enabled()&amp#27;[0m
+[INFO ]2024-10-2912:39:55.133[main]utilities.LoggerLoad1]-Add New Batch field validation completed
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe pop up should include the fields Batch Name,Number of classes and Description as text box, Program Name as drop down Status as radio button&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.the_pop_up_should_include_the_fields_batch_name_number_of_classes_and_description_as_text_box_program_name_as_drop_down_status_as_radio_button()&amp#27;[0m
+[INFO ]2024-10-2912:39:55.146[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:38:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate batchname prefix selected program name&quot;, &quot;Add New Batch details pop up&quot;](42)" classname="runner.TestRunner" time="33.584">
+    <system-out><![CDATA[
+Scenario: Validate batchname prefix selected program name                  &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m                               &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin selects program name present in the dropdown&amp#27;[0m                  &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_selects_program_name_present_in_the_dropdown()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see selected program name in the batch name prefix box&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_see_selected_program_name_in_the_batch_name_prefix_box()&amp#27;[0m
+[INFO ]2024-10-2912:40:28.748[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:40:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate batch name suffix box should accept only numbers&quot;, &quot;Add New Batch details pop up&quot;](43)" classname="runner.TestRunner" time="31.735">
+    <system-out><![CDATA[
+Scenario: Validate batch name suffix box should accept only numbers          &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m                                 &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enters alphabets in batch name suffix box&amp#27;[0m                       &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_alphabets_in_batch_name_suffix_box()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should get error message below the text box of respective field&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_error_message_below_the_text_box_of_respective_field()&amp#27;[0m
+[INFO ]2024-10-2912:41:00.511[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:40:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate batch name prefix box is not editable&quot;, &quot;Add New Batch details pop up&quot;](44)" classname="runner.TestRunner" time="36.62">
+    <system-out><![CDATA[
+Scenario: Validate batch name prefix box is not editable &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:20&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m             &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enters alphabets in batch name prefix box&amp#27;[0m   &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_alphabets_in_batch_name_prefix_box()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see empty text box&amp#27;[0m                   &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_see_empty_text_box()&amp#27;[0m
+[INFO ]2024-10-2912:41:37.128[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:41:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate input data only for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;](45)" classname="runner.TestRunner" time="68.909">
+    <system-out><![CDATA[
+Scenario: Validate input data only for mandatory fields                           &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enters the data only to the mandatory fiields and clicks save button&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_the_data_only_to_the_mandatory_fiields_and_clicks_save_button()&amp#27;[0m
+[INFO ]2024-10-2912:42:46.015[main]utilities.LoggerLoad1]-Batch created with only mandatory fields
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should get a successful message&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_successful_message()&amp#27;[0m
+[INFO ]2024-10-2912:42:46.016[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:41:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate input data missing for mandatory fields&quot;, &quot;Add New Batch details pop up&quot;](46)" classname="runner.TestRunner" time="64.394">
+    <system-out><![CDATA[
+Scenario: validate input data missing for mandatory fields                &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:28&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m                              &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin leaves blank one of the mandatory fields&amp#27;[0m                     &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_leaves_blank_one_of_the_mandatory_fields()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should get a error message on the respective mandatory field&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_error_message_on_the_respective_mandatory_field()&amp#27;[0m
+[INFO ]2024-10-2912:43:50.409[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:42:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate save button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;](47)" classname="runner.TestRunner" time="69.454">
+    <system-out><![CDATA[
+Scenario: validate save button in Batch details pop up                                                &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:32&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m                                                          &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enters the valid data to all the mandatory fields and click save button in batch details&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_save_button_in_batch_details()&amp#27;[0m
+[INFO ]2024-10-2912:44:59.866[main]utilities.LoggerLoad1]-Batch created with all fields
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should get a succesesful message&amp#27;[0m                                                         &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_should_get_a_succesesful_message()&amp#27;[0m
+[INFO ]2024-10-2912:44:59.867[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:43:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate cancel button in Batch details pop up&quot;, &quot;Add New Batch details pop up&quot;](48)" classname="runner.TestRunner" time="68.5">
+    <system-out><![CDATA[
+Scenario: validate cancel button in Batch details pop up                                                &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:36&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m                                                            &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enters the valid data to all the mandatory fields and click cancel button in Batch details&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_cancel_button_in_batch_details()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin can see the batch details popup closes without creating any batch&amp#27;[0m                          &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_can_see_the_batch_details_popup_closes_without_creating_any_batch()&amp#27;[0m
+[INFO ]2024-10-2912:46:08.360[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:45:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate close icon on the batch details pop up&quot;, &quot;Add New Batch details pop up&quot;](49)" classname="runner.TestRunner" time="33.461">
+    <system-out><![CDATA[
+Scenario: validate close icon on the batch details pop up &amp#27;[90m# src/test/resources/features/TC04_04_Add_New_Batch_details_pop_up.feature:40&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Add new batch pop up&amp#27;[0m              &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_is_on_the_add_new_batch_pop_up()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on the close icon&amp#27;[0m                     &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.admin_clicks_on_the_close_icon()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mbatch details pop up closes&amp#27;[0m                        &amp#27;[90m# stepDefinitions.Batch_AddNewBatchDetailsPopup.batch_details_pop_up_closes()&amp#27;[0m
+[INFO ]2024-10-2912:46:41.854[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:46:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate Edit icon feature in any row&quot;, &quot;Admin is on the batch page&quot;](50)" classname="runner.TestRunner" time="31.178">
+    <system-out><![CDATA[
+Scenario: Validate Edit icon feature in any row         &amp#27;[90m# src/test/resources/features/TC04_05_Edit_icon_Validation.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page&amp#27;[0m                      &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_is_on_the_batch_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks the edit icon&amp#27;[0m                       &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_clicks_the_edit_icon()&amp#27;[0m
+[INFO ]2024-10-2912:47:13.006[main]utilities.LoggerLoad1]-Edit batch opened
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the Batch details pop up window&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_should_see_the_batch_details_pop_up_window()&amp#27;[0m
+[INFO ]2024-10-2912:47:13.007[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:46:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate program name  value is disabled to edit&quot;, &quot;Admin is on the batch page&quot;](51)" classname="runner.TestRunner" time="32.237">
+    <system-out><![CDATA[
+Scenario: Validate program name  value is disabled to edit               &amp#27;[90m# src/test/resources/features/TC04_05_Edit_icon_Validation.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page&amp#27;[0m                                       &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_is_on_the_batch_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks the edit icon&amp#27;[0m                                        &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_clicks_the_edit_icon()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see Program name value field is disabled for editing&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_should_see_program_name_value_field_is_disabled_for_editing()&amp#27;[0m
+[INFO ]2024-10-2912:47:45.253[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:47:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate batch name  value is disabled to edit&quot;, &quot;Admin is on the batch page&quot;](52)" classname="runner.TestRunner" time="31.063">
+    <system-out><![CDATA[
+Scenario: Validate batch name  value is disabled to edit               &amp#27;[90m# src/test/resources/features/TC04_05_Edit_icon_Validation.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page&amp#27;[0m                                     &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_is_on_the_batch_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks the edit icon&amp#27;[0m                                      &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_clicks_the_edit_icon()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see batch name value field is disabled for editing&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Edit_icon_Validation.admin_should_see_batch_name_value_field_is_disabled_for_editing()&amp#27;[0m
+[INFO ]2024-10-2912:48:16.324[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:47:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate editing description and No. of classes fields with invalid data in the pop up&quot;, &quot;Edit batch validation&quot;](53)" classname="runner.TestRunner" time="35.779">
+    <system-out><![CDATA[
+Scenario: Validate editing description and No. of classes fields with invalid data in the pop up &amp#27;[90m# src/test/resources/features/TC04_06_Edit_batch_validation.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Batch Details Page&amp#27;[0m                                                       &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_is_on_the_batch_details_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin Updates any fields with invalid data and click save button&amp#27;[0m                          &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_updates_any_fields_with_invalid_data_and_click_save_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should get a error message under the respective field&amp#27;[0m                               &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_should_get_a_error_message_under_the_respective_field()&amp#27;[0m
+[INFO ]2024-10-2912:48:52.105[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:48:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate save button in Batch details pop up&quot;, &quot;Edit batch validation&quot;](54)" classname="runner.TestRunner" time="39.782">
+    <system-out><![CDATA[
+Scenario: validate save button in Batch details pop up                               &amp#27;[90m# src/test/resources/features/TC04_06_Edit_batch_validation.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Batch Details Page&amp#27;[0m                                           &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_is_on_the_batch_details_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enters the valid data to all the mandatory fields and click save button&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_save_button()&amp#27;[0m
+[INFO ]2024-10-2912:49:31.882[main]utilities.LoggerLoad1]-Batch edited successfully
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should get a succesesful message for editing the batch&amp#27;[0m                  &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_should_get_a_succesesful_message_for_editing_the_batch()&amp#27;[0m
+[INFO ]2024-10-2912:49:31.883[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:49:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate cancel button in Batch details pop up&quot;, &quot;Edit batch validation&quot;](55)" classname="runner.TestRunner" time="38.619">
+    <system-out><![CDATA[
+Scenario: validate cancel button in Batch details pop up                               &amp#27;[90m# src/test/resources/features/TC04_06_Edit_batch_validation.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the Batch Details Page&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_is_on_the_batch_details_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enters the valid data to all the mandatory fields and click cancel button&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_enters_the_valid_data_to_all_the_mandatory_fields_and_click_cancel_button()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin can see the batch details popup closes without editing the batch&amp#27;[0m          &amp#27;[90m# stepDefinitions.Batch_Edit_batch_validation.admin_can_see_the_batch_details_popup_closes_without_editing_the_batch()&amp#27;[0m
+[INFO ]2024-10-2912:50:10.502[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:49:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate delete Icon on any row in delete batch&quot;, &quot;Delete batch validation&quot;](56)" classname="runner.TestRunner" time="29.879">
+    <system-out><![CDATA[
+Scenario: validate delete Icon on any row in delete batch            &amp#27;[90m# src/test/resources/features/TC04_07_Delete_batch_validation.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for Delete&amp#27;[0m                        &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_is_on_the_batch_page_for_delete()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks the delete Icon on any of the row&amp#27;[0m                &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_clicks_the_delete_icon_on_any_of_the_row()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the confirm alert box with yes and no button&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_should_see_the_confirm_alert_box_with_yes_and_no_button()&amp#27;[0m
+[INFO ]2024-10-2912:50:40.366[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:50:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate yes button on the confirm alert box in delete batch&quot;, &quot;Delete batch validation&quot;](57)" classname="runner.TestRunner" time="32.576">
+    <system-out><![CDATA[
+Scenario: Validate yes button on the confirm alert box in delete batch          &amp#27;[90m# src/test/resources/features/TC04_07_Delete_batch_validation.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for Delete&amp#27;[0m                                   &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_is_on_the_batch_page_for_delete()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on the delete icon and click yes buttton&amp#27;[0m                    &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_clicks_on_the_delete_icon_and_click_yes_buttton()&amp#27;[0m
+[INFO ]2024-10-2912:51:12.960[main]utilities.LoggerLoad1]-Batch successully deleted
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the successfull message and the batch should be deleted&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_should_see_the_successfull_message_and_the_batch_should_be_deleted()&amp#27;[0m
+[INFO ]2024-10-2912:51:12.962[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:50:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate no button on the confirm alert box in delete batch&quot;, &quot;Delete batch validation&quot;](58)" classname="runner.TestRunner" time="29.265">
+    <system-out><![CDATA[
+Scenario: validate no button on the confirm alert box in delete batch     &amp#27;[90m# src/test/resources/features/TC04_07_Delete_batch_validation.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for Delete&amp#27;[0m                             &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_is_on_the_batch_page_for_delete()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on the delete icon and click no buttton&amp#27;[0m               &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_clicks_on_the_delete_icon_and_click_no_buttton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the alert box closed and the batch is not deleted&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_should_see_the_alert_box_closed_and_the_batch_is_not_deleted()&amp#27;[0m
+[INFO ]2024-10-2912:51:42.233[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:51:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate close Icon on the alert box in delete batch&quot;, &quot;Delete batch validation&quot;](59)" classname="runner.TestRunner" time="29.582">
+    <system-out><![CDATA[
+Scenario: validate close Icon on the alert box in delete batch &amp#27;[90m# src/test/resources/features/TC04_07_Delete_batch_validation.feature:20&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for Delete&amp#27;[0m                  &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_is_on_the_batch_page_for_delete()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on the close icon on alert box&amp#27;[0m             &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_clicks_on_the_close_icon_on_alert_box()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the alert box closed&amp#27;[0m                   &amp#27;[90m# stepDefinitions.Batch_Delete_batch_validation.admin_should_see_the_alert_box_closed()&amp#27;[0m
+[INFO ]2024-10-2912:52:11.806[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:51:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate single row delete with checkbox&quot;, &quot;Delete multiple batches with check box&quot;](60)" classname="runner.TestRunner" time="34.789">
+    <system-out><![CDATA[
+Scenario: Validate single row delete with checkbox                                  &amp#27;[90m# src/test/resources/features/TC04_08_Delete_multiple_batches_with_check_box.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for delete multiple&amp#27;[0m                              &amp#27;[90m# stepDefinitions.Batch_Delete_multiple_batches_with_check_box.admin_is_on_the_batch_page_for_delete_multiple()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on the delete icon under the Manage batch header for single row&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Delete_multiple_batches_with_check_box.admin_clicks_on_the_delete_icon_under_the_manage_batch_header_for_single_row()&amp#27;[0m
+[INFO ]2024-10-2912:52:46.594[main]utilities.LoggerLoad1]-Based on row count, batch is deleted successfully
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe respective row in the table should be deleted&amp#27;[0m                            &amp#27;[90m# stepDefinitions.Batch_Delete_multiple_batches_with_check_box.the_respective_row_in_the_table_should_be_deleted()&amp#27;[0m
+[INFO ]2024-10-2912:52:46.595[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:52:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate multiple row delete with checkbox&quot;, &quot;Delete multiple batches with check box&quot;](61)" classname="runner.TestRunner" time="40.008">
+    <system-out><![CDATA[
+Scenario: Validate multiple row delete with checkbox                                  &amp#27;[90m# src/test/resources/features/TC04_08_Delete_multiple_batches_with_check_box.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for delete multiple&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Batch_Delete_multiple_batches_with_check_box.admin_is_on_the_batch_page_for_delete_multiple()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on the delete icon under the Manage batch header for multiple row&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Delete_multiple_batches_with_check_box.admin_clicks_on_the_delete_icon_under_the_manage_batch_header_for_multiple_row()&amp#27;[0m
+[INFO ]2024-10-2912:53:26.606[main]utilities.LoggerLoad1]-Based on row count, batch is deleted successfully
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe respective row in the table should be deleted&amp#27;[0m                              &amp#27;[90m# stepDefinitions.Batch_Delete_multiple_batches_with_check_box.the_respective_row_in_the_table_should_be_deleted()&amp#27;[0m
+[INFO ]2024-10-2912:53:26.607[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:52:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate next page link&quot;, &quot;Pagination&quot;](62)" classname="runner.TestRunner" time="94.443">
+    <system-out><![CDATA[
+Scenario: Validate next page link                    &amp#27;[90m# src/test/resources/features/TC04_09_Pagination.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for Pagination&amp#27;[0m    &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_is_on_the_batch_page_for_pagination()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks next page link on the data table&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_clicks_next_page_link_on_the_data_table()&amp#27;[0m
+[INFO ]2024-10-2912:55:00.973[main]utilities.LoggerLoad1]-Pagination validated for Next page
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the Next enabled link&amp#27;[0m        &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_should_see_the_next_enabled_link()&amp#27;[0m
+[INFO ]2024-10-2912:55:00.976[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:53:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate last page link&quot;, &quot;Pagination&quot;](63)" classname="runner.TestRunner" time="95.551">
+    <system-out><![CDATA[
+Scenario: validate last page link                                                    &amp#27;[90m# src/test/resources/features/TC04_09_Pagination.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for Pagination&amp#27;[0m                                    &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_is_on_the_batch_page_for_pagination()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks last page link on the data table&amp#27;[0m                                 &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_clicks_last_page_link_on_the_data_table()&amp#27;[0m
+[INFO ]2024-10-2912:56:36.530[main]utilities.LoggerLoad1]-Pagination validated for Last page
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the last page link with next page link disabled on the table&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_should_see_the_last_page_link_with_next_page_link_disabled_on_the_table()&amp#27;[0m
+[INFO ]2024-10-2912:56:36.533[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:55:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate the backward page link&quot;, &quot;Pagination&quot;](64)" classname="runner.TestRunner" time="154.58">
+    <system-out><![CDATA[
+Scenario: validate the backward page link                &amp#27;[90m# src/test/resources/features/TC04_09_Pagination.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for Pagination&amp#27;[0m        &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_is_on_the_batch_page_for_pagination()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks backward page link on the data table&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_clicks_backward_page_link_on_the_data_table()&amp#27;[0m
+[INFO ]2024-10-2912:59:11.091[main]utilities.LoggerLoad1]-Pagination validated for Previous page
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the previous page on the table&amp#27;[0m   &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_should_see_the_previous_page_on_the_table()&amp#27;[0m
+[INFO ]2024-10-2912:59:11.093[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:56:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate the first page link&quot;, &quot;Pagination&quot;](65)" classname="runner.TestRunner" time="126.37">
+    <system-out><![CDATA[
+Scenario: validate the first page link                        &amp#27;[90m# src/test/resources/features/TC04_09_Pagination.feature:20&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for Pagination&amp#27;[0m             &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_is_on_the_batch_page_for_pagination()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks first page link on the data table&amp#27;[0m         &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_clicks_first_page_link_on_the_data_table()&amp#27;[0m
+[INFO ]2024-10-2913:01:17.467[main]utilities.LoggerLoad1]-Pagination validated for First page
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the very first page on the data table&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Pagination.admin_should_see_the_very_first_page_on_the_data_table()&amp#27;[0m
+[INFO ]2024-10-2913:01:17.470[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 12:59:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;validate serach box functionality&quot;, &quot;Search Text box validation&quot;](66)" classname="runner.TestRunner" time="32.219">
+    <system-out><![CDATA[
+Scenario: validate serach box functionality                    &amp#27;[90m# src/test/resources/features/TC04_10_Search_Text_box_validation.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for search&amp#27;[0m                  &amp#27;[90m# stepDefinitions.Batch_Search_Text_box_validation.admin_is_on_the_batch_page_for_search()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin enters the batch name in the serach text box&amp#27;[0m      &amp#27;[90m# stepDefinitions.Batch_Search_Text_box_validation.admin_enters_the_batch_name_in_the_serach_text_box()&amp#27;[0m
+StaleElementReferenceException encountered. Retrying... 1
+[INFO ]2024-10-2913:01:49.776[main]utilities.LoggerLoad1]-Search validation completed
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the filtered batches in the data table&amp#27;[0m &amp#27;[90m# stepDefinitions.Batch_Search_Text_box_validation.admin_should_see_the_filtered_batches_in_the_data_table()&amp#27;[0m
+[INFO ]2024-10-2913:01:49.778[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 1:01:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate logout option in the header is visible and enabled from the batch page&quot;, &quot;LogOut of the application from the batch page&quot;](67)" classname="runner.TestRunner" time="32.136">
+    <system-out><![CDATA[
+Scenario: Validate logout option in the header is visible and enabled from the batch page &amp#27;[90m# src/test/resources/features/TC04_11_LogOut_of_the_application_from_the_batch_page.feature:8&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is on the batch page for logout&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Batch_LogOut_of_the_application_from_the_batch_page.admin_is_on_the_batch_page_for_logout()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on the logout button&amp#27;[0m                                                  &amp#27;[90m# stepDefinitions.Batch_LogOut_of_the_application_from_the_batch_page.admin_clicks_on_the_logout_button()&amp#27;[0m
+[INFO ]2024-10-2913:02:21.907[main]utilities.LoggerLoad1]-Admin logged out successfully
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should see the Login screen Page&amp#27;[0m                                             &amp#27;[90m# stepDefinitions.Batch_LogOut_of_the_application_from_the_batch_page.admin_should_see_the_login_screen_page()&amp#27;[0m
+[INFO ]2024-10-2913:02:21.908[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 1:01:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify logout function&quot;, &quot;Validation on Logout button&quot;](68)" classname="runner.TestRunner" time="24.525">
+    <system-out><![CDATA[
+Scenario: Verify logout function                  &amp#27;[90m# src/test/resources/features/TC06_LogoutPage.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mAdmin is in dashboard page&amp#27;[0m                &amp#27;[90m# stepDefinitions.LogoutSteps.admin_is_in_dashboard_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin clicks on the logout in the menu bar&amp#27;[0m &amp#27;[90m# stepDefinitions.LogoutSteps.admin_clicks_on_the_logout_in_the_menu_bar()&amp#27;[0m
+[INFO ]2024-10-2913:02:46.451[main]utilities.LoggerLoad1]-Admin logged out successfully
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAdmin should be redirected to login page&amp#27;[0m   &amp#27;[90m# stepDefinitions.LogoutSteps.admin_should_be_redirected_to_login_page()&amp#27;[0m
+[INFO ]2024-10-2913:02:46.452[main]utilities.LoggerLoad1]-Quitting the browser 
+]]></system-out>
+    <system-err><![CDATA[Oct 29, 2024 1:02:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, returning the closest version; found: 129; Please update to a Selenium version that supports CDP version 130
+]]></system-err>
+  </testcase>
+</testsuite>
