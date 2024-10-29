@@ -192,7 +192,7 @@ public class BatchDetailsPage extends CommonMethods {
 	}
 
 	public String getToast() {
-		waitForElementToBeVisible(toastMessage, 10);
+		waitForElementToBeVisible(toastMessage, 15);
 		return toastMessage.getText();
 	}
 
