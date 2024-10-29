@@ -26,7 +26,6 @@ public class ExcelReader {
 		sheet = workbook.getSheet(sheetName);
 	}
 
-	 
 	public String getCellData(String header, int rowNum) {
 		int colNum = getColumnIndex(header);
 		if (colNum == -1 || rowNum < 0) {

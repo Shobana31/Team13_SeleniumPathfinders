@@ -1,16 +1,18 @@
 package pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import hooks.appHooks;
 import utilities.CommonMethods;
-import utilities.ExcelReader;
 
 public class BatchPage extends CommonMethods {
 
@@ -49,8 +51,10 @@ public class BatchPage extends CommonMethods {
 	@FindBy(xpath = "//thead[@class='p-datatable-thead']//th/p-sorticon")
 	WebElement sortIconHeader;
 
-	// Action methods
+	@FindBy(xpath = "//span[normalize-space()='Batch Details']")
+	WebElement batchDetails;
 
+	// Action methods
 	public String getBatchTitle() {
 		return titleofBatchPage.getText();
 	}
@@ -61,6 +65,26 @@ public class BatchPage extends CommonMethods {
 
 	public boolean clickPaginationControl() {
 		return paginationControl.isEnabled();
+	}
+
+	public void clickEdit() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".cdk-overlay-backdrop")));
+		WebElement editIcon = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@icon='pi pi-pencil']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", editIcon);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editIcon);
+
+	}
+
+	public void clickDelete() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".cdk-overlay-backdrop")));
+		WebElement deleteIcon = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@class='action']//button[@icon='pi pi-trash']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteIcon);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", deleteIcon);
+
 	}
 
 	public int clickEditIcon() {
@@ -101,6 +125,10 @@ public class BatchPage extends CommonMethods {
 	public void setDataFromExcel() {
 		String data = getDataFromExcel("Batch", "Batch Name", 1);
 		System.out.println("Data from Excel: " + data);
+	}
+
+	public String getBatchDetails() {
+		return elementGetText(batchDetails);
 	}
 
 }

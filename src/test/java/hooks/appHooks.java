@@ -28,10 +28,10 @@ public class appHooks {
 
 	@Before
 	public void setup() throws Throwable {
-		propertyLoader = new PropertyLoader(); // Initialize the PropertyLoader
-		String browser = System.getProperty("browser"); // Get the browser from system properties
+		propertyLoader = new PropertyLoader();
+		String browser = System.getProperty("browser");
 		if (browser == null || browser.isEmpty()) {
-			browser = propertyLoader.getProperty("browser"); // Fetch browser property from config file
+			browser = propertyLoader.getProperty("browser");
 		}
 		switch (browser.toLowerCase()) {
 		case "chrome":
@@ -45,7 +45,7 @@ public class appHooks {
 		}
 		driver.manage().window().maximize();
 		CommonMethods.driver = driver;
-		downloadFile(); // Download the file before executing scenarios
+		downloadFile();
 	}
 
 	@After

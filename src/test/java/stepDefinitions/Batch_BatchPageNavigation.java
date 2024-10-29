@@ -11,6 +11,7 @@ import pageObjects.BatchPage;
 import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
 import utilities.CommonMethods;
+import utilities.LoggerLoad;
 import utilities.PropertyLoader;
 
 public class Batch_BatchPageNavigation extends CommonMethods {
@@ -19,16 +20,10 @@ public class Batch_BatchPageNavigation extends CommonMethods {
 	DashboardPage dp = new DashboardPage(driver);
 	LoginSteps ls = new LoginSteps();
 	BatchPage bp = new BatchPage(driver);
-	
+	LoggerLoad logs = new LoggerLoad();
+
 	@Given("Admin successfully Logged on to LMS Portal")
 	public void admin_successfully_logged_on_to_the_lms_portal() {
-		getURL();
-		ls.admin_enter_valid_credentials_and_clicks_login_button();
-		implicitlyWait();
-	}
-
-	@Given("Admin is on the Dashboard Page")
-	public void admin_is_on_the_dashboard_page() {
 		getURL();
 		ls.admin_enter_valid_credentials_and_clicks_login_button();
 		implicitlyWait();
@@ -41,10 +36,8 @@ public class Batch_BatchPageNavigation extends CommonMethods {
 
 	@Then("Admin should be in the Manage Batch Page")
 	public void admin_should_be_in_the_manage_batch_page() {
-		String title = bp.getBatchTitle();
-		Assert.assertEquals(title, "Manage Batch");
-
-		bp.setDataFromExcel(); //validating excel data here
+		Assert.assertEquals(bp.getBatchTitle(), "Manage Batch");
+		logs.info("Manage Batch Page navigation worked");
 	}
 
 }
