@@ -21,7 +21,6 @@ public class ProgramSteps {
 	LoginSteps ls = new LoginSteps();
 	BatchPage bp = new BatchPage(driver);
 	ProgramPage pp = new ProgramPage(driver);
-	//AddNewProgram_ActionPage anpp = new AddNewProgram_ActionPage(driver);
 	private PropertyLoader propertyLoader;
 	public ProgramSteps() {
 		propertyLoader = new PropertyLoader();
